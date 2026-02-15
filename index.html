@@ -21,6 +21,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="image" href="./assets/images/avatar.jpg">
 </head>
 
 <body
@@ -162,7 +163,7 @@
                         <div
                             class="absolute inset-0 bg-primary-100 dark:bg-primary-900 rounded-full animate-pulse filter blur-2xl">
                         </div>
-                        <img src="./assets/images/avatar.jpg" alt="Profile"
+                        <img src="./assets/images/avatar.jpg" alt="Profile" loading="lazy" width="320" height="320"
                             class="rounded-full w-full h-full object-cover border-4 border-white dark:border-gray-800 shadow-2xl relative z-10 transform hover:scale-105 transition-transform duration-500">
                         <!-- Floating Badge -->
                         <div
