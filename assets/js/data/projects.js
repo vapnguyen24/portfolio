@@ -1,7 +1,7 @@
 window.projects = [
     {
         id: "project1",
-        title: { en: "ScreenCast App", vi: "Ứng dụng ScreenCast" },
+        title: { en: "ScreenCast", vi: "Ứng dụng ScreenCast" },
         category: {
             title: { en: "Mobile Developer", vi: "Mobile Developer" },
             className: "bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300"
@@ -61,12 +61,34 @@ window.projects = [
             en: "A comprehensive IoT solution built on the ThingIQ platform. The system supports real-time data collection from sensors and tracking devices, advanced analytics, rule-based alerts, and remote device management. It features secure API integration, scalable cloud infrastructure, and an interactive dashboard for monitoring fleet, environment, and operational performance.",
             vi: "Giải pháp IoT toàn diện được xây dựng trên nền tảng ThingIQ. Hệ thống hỗ trợ thu thập dữ liệu thời gian thực từ cảm biến và thiết bị theo dõi, phân tích nâng cao, cảnh báo theo luật và quản lý thiết bị từ xa. Các tính năng bao gồm tích hợp API bảo mật, hạ tầng cloud có khả năng mở rộng và dashboard trực quan để giám sát đội xe, môi trường và hiệu suất vận hành."
         },
-        img: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        img: "./assets/images/thingiq/img1.png",
         tags: ["React Native", "Expo", "ECharts", "MapSDK", "SocketIO", "SSE", "Firebase", "Zustand"],
         images: [
-            "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1530811761207-8d9d22f0a141?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            "./assets/images/thingiq/img1.png",
+            "./assets/images/thingiq/img2.png",
+            "./assets/images/thingiq/img3.png"
+        ]
+    },
+    {
+        id: "project4",
+        title: { en: "Finself", vi: "Ứng Dụng Finself" },
+        category: {
+            title: { en: "Mobile Developer", vi: "Mobile Developer" },
+            className: "bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300"
+        },
+        summary: {
+            en: "A personal finance management application that helps users track expenses, manage budgets, and build healthy financial habits.",
+            vi: "Ứng dụng quản lý tài chính cá nhân giúp người dùng theo dõi chi tiêu, quản lý ngân sách và xây dựng thói quen tài chính lành mạnh."
+        },
+        desc: {
+            en: "A smart personal finance solution designed to simplify money management. The app allows users to record daily income and expenses, categorize transactions, set saving goals, and analyze spending habits through visual reports. It features cloud synchronization, secure data storage, and an intuitive interface optimized for long-term financial planning and personal growth.",
+            vi: "Giải pháp quản lý tài chính cá nhân thông minh được thiết kế để đơn giản hóa việc quản lý tiền bạc. Ứng dụng cho phép người dùng ghi lại thu chi hằng ngày, phân loại giao dịch, đặt mục tiêu tiết kiệm và phân tích thói quen chi tiêu thông qua báo cáo trực quan. Hệ thống tích hợp đồng bộ dữ liệu trên cloud, lưu trữ an toàn và giao diện thân thiện, tối ưu cho việc lập kế hoạch tài chính lâu dài và phát triển cá nhân."
+        },
+        img: "./assets/images/finself/img1.png",
+        tags: ["Flutter", "Dio", "Riverpod", "Notification", "SSO Authentication", "WidgetKit"],
+        images: [
+            "./assets/images/finself/img1.png",
+            "./assets/images/finself/img2.png"
         ]
     },
     {
@@ -74,7 +96,7 @@ window.projects = [
         title: { en: "MagicHands", vi: "Ứng Dụng MagicHands" },
         category: {
             title: { en: "Mobile Developer", vi: "Mobile Developer" },
-            className: "bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300"
+            className: "bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300"
         },
         summary: {
             en: "A smart home service booking platform that connects users with professional domestic workers quickly and conveniently.",
@@ -84,12 +106,12 @@ window.projects = [
             en: "A comprehensive on-demand home service application designed to simplify daily life. The platform allows users to book cleaning, maintenance, and household services in real time. It features secure payments, real-time job tracking, partner management, and an intuitive admin dashboard. The system focuses on service quality, operational efficiency, and seamless user experience.",
             vi: "Ứng dụng dịch vụ gia đình theo yêu cầu được thiết kế nhằm đơn giản hóa cuộc sống hằng ngày. Nền tảng cho phép người dùng đặt lịch dọn dẹp, bảo trì và các dịch vụ gia đình theo thời gian thực. Hệ thống tích hợp thanh toán an toàn, theo dõi công việc trực tuyến, quản lý cộng tác viên và dashboard quản trị trực quan. Ứng dụng tập trung vào chất lượng dịch vụ, hiệu quả vận hành và trải nghiệm người dùng mượt mà."
         },
-        img: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        img: "./assets/images/magichands/img1.png",
         tags: ["React Native", "Expo", "Redux", "Axios", "Keychain", "Firebase", "Rollbar", "WidgetKit"],
         images: [
-            "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1530811761207-8d9d22f0a141?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            "./assets/images/magichands/img1.png",
+            "./assets/images/magichands/img2.png",
+            "./assets/images/magichands/img3.png"
         ]
     },
     {
@@ -107,12 +129,12 @@ window.projects = [
             en: "A comprehensive student support application designed to streamline academic management. The platform allows students to view and track class schedules, check grades, monitor attendance, receive announcements from school, and manage academic activities easily. It features secure login, intuitive navigation, personalized dashboards, and real-time updates. The system focuses on delivering accurate student information, improving educational experience, and simplifying everyday academic tasks.",
             vi: "Một ứng dụng hỗ trợ sinh viên toàn diện được thiết kế nhằm đơn giản hóa việc quản lý học tập. Nền tảng cho phép sinh viên xem và theo dõi lịch học, kiểm tra điểm số, giám sát điểm danh, nhận thông báo từ nhà trường và quản lý các hoạt động học tập dễ dàng. Ứng dụng tích hợp đăng nhập bảo mật, điều hướng trực quan, dashboard cá nhân hóa và cập nhật theo thời gian thực. Hệ thống tập trung vào cung cấp thông tin chính xác cho sinh viên, nâng cao trải nghiệm học tập và đơn giản hóa các công việc học tập hàng ngày."
         },
-        img: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        img: "./assets/images/myfpl/img1.png",
         tags: ["React Native", "JavaScript", "Redux Saga", "Axios", "SSO Authentication", "Firebase"],
         images: [
-            "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1530811761207-8d9d22f0a141?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            "./assets/images/myfpl/img1.png",
+            "./assets/images/myfpl/img2.png",
+            "./assets/images/myfpl/img3.png"
         ]
     },
 ];
