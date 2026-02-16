@@ -106,6 +106,12 @@ window.initModal = function (state) {
         currentImages = p.images && p.images.length > 0 ? p.images : (p.img ? [p.img] : []);
         currentIndex = 0;
 
+        // Preload all project images for this modal
+        currentImages.forEach(src => {
+            const imgPreload = new Image();
+            imgPreload.src = src;
+        });
+
         // Initial Image Load
         const img = document.getElementById('modal-img');
         if (img && currentImages.length > 0) {
