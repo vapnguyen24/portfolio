@@ -29,7 +29,10 @@ window.translations = {
         contact_message: "Message",
         btn_send: "Send Message",
         modal_view_live: "View Detail",
-        modal_source_code: "Source Code"
+        modal_source_code: "Source Code",
+        modal_back: "Back to Summary",
+        modal_loading: "Loading details...",
+        btn_details_modal: "View Detail"
     },
     vi: {
         nav_about: "Giới thiệu",
@@ -60,6 +63,9 @@ window.translations = {
         contact_message: "Lời nhắn",
         btn_send: "Gửi Tin Nhắn",
         modal_view_live: "Xem Chi Tiết",
-        modal_source_code: "Mã Nguồn"
+        modal_source_code: "Mã Nguồn",
+        modal_back: "Trở lại",
+        modal_loading: "Đang tải chi tiết...",
+        btn_details_modal: "Chi Tiết Dự Án"
     }
 };

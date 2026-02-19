@@ -20,7 +20,8 @@ window.projects = [
             "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        ]
+        ],
+        readmePath: "docs/casting/README.md"
     },
     {
         id: "project2",
@@ -44,7 +45,8 @@ window.projects = [
             "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1543286386-713df548e9cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        ]
+        ],
+        readmePath: "docs/nft/README.md"
     },
     {
         id: "project3",
@@ -67,7 +69,8 @@ window.projects = [
             "./assets/images/thingiq/img1.png",
             "./assets/images/thingiq/img2.png",
             "./assets/images/thingiq/img3.png"
-        ]
+        ],
+        readmePath: "docs/thingiq/README.md"
     },
     {
         id: "project4",
@@ -89,7 +92,8 @@ window.projects = [
         images: [
             "./assets/images/finself/img1.png",
             "./assets/images/finself/img2.png"
-        ]
+        ],
+        readmePath: "docs/finself/README.md"
     },
     {
         id: "project5",
@@ -112,7 +116,8 @@ window.projects = [
             "./assets/images/magichands/img1.png",
             "./assets/images/magichands/img2.png",
             "./assets/images/magichands/img3.png"
-        ]
+        ],
+        readmePath: "docs/magichands/README.md"
     },
     {
         id: "project6",
@@ -135,6 +140,7 @@ window.projects = [
             "./assets/images/myfpl/img1.png",
             "./assets/images/myfpl/img2.png",
             "./assets/images/myfpl/img3.png"
-        ]
+        ],
+        readmePath: "docs/myfpl/README.md"
     },
 ];

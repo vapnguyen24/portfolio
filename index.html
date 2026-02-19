@@ -39,6 +39,59 @@
 
     <!-- Preload -->
     <link rel="preload" as="image" href="./assets/images/avatar.jpg">
+
+    <style>
+        /* Markdown Styles */
+        .markdown-body {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: inherit;
+        }
+        .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+            color: var(--primary-600);
+        }
+        .dark .markdown-body h1, .dark .markdown-body h2, .dark .markdown-body h3 {
+            color: var(--primary-400);
+        }
+        .markdown-body h1 { font-size: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
+        .markdown-body h2 { font-size: 1.3em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
+        .markdown-body h3 { font-size: 1.1em; }
+        .markdown-body p, .markdown-body ul, .markdown-body ol { margin-bottom: 1em; }
+        .markdown-body ul { list-style-type: disc; padding-left: 1.5em; }
+        .markdown-body ol { list-style-type: decimal; padding-left: 1.5em; }
+        .markdown-body li { margin-bottom: 0.25em; }
+        .markdown-body code {
+            background-color: #f3f4f6;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        .dark .markdown-body code { background-color: #374151; }
+        .markdown-body pre {
+            background-color: #f3f4f6;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 1em;
+        }
+        .dark .markdown-body pre { background-color: #1f2937; }
+        .markdown-body blockquote {
+            border-left: 4px solid #e5e7eb;
+            padding-left: 1rem;
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+        .dark .markdown-body blockquote { border-left-color: #4b5563; color: #9ca3af; }
+        .markdown-body img { max-width: 100%; border-radius: 8px; margin: 1em 0; }
+        .markdown-body hr { margin: 2em 0; border: 0; border-top: 1px solid #e5e7eb; }
+        .dark .markdown-body hr { border-top-color: #374151; }
+    </style>
 </head>
 
 <body
@@ -333,7 +386,7 @@
             </button>
 
             <!-- Image Side -->
-            <div class="w-full md:w-3/5 h-64 md:h-auto bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
+            <div id="modal-slider-side" class="w-full md:w-3/5 h-64 md:h-auto bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
                 <img id="modal-img" src="" alt="Project Preview"
                     class="absolute inset-0 w-full h-full object-cover transition-all duration-500">
 
@@ -358,25 +411,34 @@
             </div>
 
             <!-- Text Side -->
-            <div class="w-full md:w-2/5 p-8 flex flex-col overflow-y-auto">
-                <h3 id="modal-title" class="text-2xl font-bold font-heading mb-2">Project Title</h3>
-                <div id="modal-tags" class="flex flex-wrap gap-2 mb-4">
-                    <!-- Tags injected via JS -->
+            <div class="w-full md:w-2/5 p-8 flex flex-col overflow-y-auto" id="modal-text-side">
+                <div id="summary-view" class="flex flex-col h-full">
+                    <h3 id="modal-title" class="text-2xl font-bold font-heading mb-2">Project Title</h3>
+                    <div id="modal-tags" class="flex flex-wrap gap-2 mb-4">
+                        <!-- Tags injected via JS -->
+                    </div>
+                    <p id="modal-desc" class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
+                        <!-- Description injected via JS -->
+                    </p>
+                    <div class="flex gap-4 mt-auto">
+                        <button id="view-detail-btn"
+                            class="flex-1 py-2 text-center bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm font-medium">
+                            View Detail
+                        </button>
+                    </div>
                 </div>
-                <p id="modal-desc" class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
-                    <!-- Description injected via JS -->
-                </p>
-                <div class="flex gap-4 mt-auto">
-                    <a href="#"
-                        class="flex-1 py-2 text-center bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm font-medium"
-                        data-i18n="modal_view_live">
-                        View Detail
-                    </a>
-                    <!-- <a href="#"
-                        class="flex-1 py-2 text-center border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors text-sm font-medium"
-                        data-i18n="modal_source_code">
-                        Source Code
-                    </a> -->
+
+                <div id="detail-view" class="hidden flex flex-col h-full">
+                    <button onclick="toggleDetailView(false)" class="mb-4 text-primary-600 dark:text-primary-400 text-sm font-medium flex items-center gap-2 hover:underline">
+                        <i class="fas fa-arrow-left"></i> <span data-i18n="modal_back">Back to Summary</span>
+                    </button>
+                    <div id="readme-content" class="markdown-body overflow-y-auto pr-2">
+                        <!-- README content injected via JS -->
+                        <div class="flex flex-col items-center justify-center py-12 text-gray-400">
+                             <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
+                             <span data-i18n="modal_loading">Loading details...</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -412,6 +474,7 @@
     </div>
 
     <!-- Scripts Loaded sequentially for File Protocol Compatibility -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="assets/js/data/translations.js"></script>
     <script src="assets/js/data/projects.js"></script>
     <script src="assets/js/data/skills.js"></script>
