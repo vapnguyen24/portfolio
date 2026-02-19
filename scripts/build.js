@@ -20,6 +20,7 @@ async function build() {
     // 2. Copy files (excluding node_modules, etc.)
     console.log('📦 Copying files to dist...');
     fs.copySync(path.join(rootDir, 'assets'), path.join(distDir, 'assets'));
+    fs.copySync(path.join(rootDir, 'docs'), path.join(distDir, 'docs'));
     fs.copySync(path.join(rootDir, 'index.html'), path.join(distDir, 'index.html'));
 
     // Copy CV if it exists in root (check if it's referenced in index.html)
