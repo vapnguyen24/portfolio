@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Vinh Nguyen</title>
-    <meta name="description" content="Professional portfolio of a Full Stack Mobile Developer.">
+    <meta name="description" content="Professional portfolio of a Mobile App Developer.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -48,22 +48,58 @@
             line-height: 1.6;
             color: inherit;
         }
-        .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3 {
             margin-top: 1.5em;
             margin-bottom: 0.5em;
             font-weight: 700;
             color: var(--primary-600);
         }
-        .dark .markdown-body h1, .dark .markdown-body h2, .dark .markdown-body h3 {
+
+        .dark .markdown-body h1,
+        .dark .markdown-body h2,
+        .dark .markdown-body h3 {
             color: var(--primary-400);
         }
-        .markdown-body h1 { font-size: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
-        .markdown-body h2 { font-size: 1.3em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
-        .markdown-body h3 { font-size: 1.1em; }
-        .markdown-body p, .markdown-body ul, .markdown-body ol { margin-bottom: 1em; }
-        .markdown-body ul { list-style-type: disc; padding-left: 1.5em; }
-        .markdown-body ol { list-style-type: decimal; padding-left: 1.5em; }
-        .markdown-body li { margin-bottom: 0.25em; }
+
+        .markdown-body h1 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3em;
+        }
+
+        .markdown-body h2 {
+            font-size: 1.3em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3em;
+        }
+
+        .markdown-body h3 {
+            font-size: 1.1em;
+        }
+
+        .markdown-body p,
+        .markdown-body ul,
+        .markdown-body ol {
+            margin-bottom: 1em;
+        }
+
+        .markdown-body ul {
+            list-style-type: disc;
+            padding-left: 1.5em;
+        }
+
+        .markdown-body ol {
+            list-style-type: decimal;
+            padding-left: 1.5em;
+        }
+
+        .markdown-body li {
+            margin-bottom: 0.25em;
+        }
+
         .markdown-body code {
             background-color: #f3f4f6;
             padding: 0.2em 0.4em;
@@ -71,7 +107,11 @@
             font-family: monospace;
             font-size: 0.9em;
         }
-        .dark .markdown-body code { background-color: #374151; }
+
+        .dark .markdown-body code {
+            background-color: #374151;
+        }
+
         .markdown-body pre {
             background-color: #f3f4f6;
             padding: 1rem;
@@ -79,7 +119,11 @@
             overflow-x: auto;
             margin-bottom: 1em;
         }
-        .dark .markdown-body pre { background-color: #1f2937; }
+
+        .dark .markdown-body pre {
+            background-color: #1f2937;
+        }
+
         .markdown-body blockquote {
             border-left: 4px solid #e5e7eb;
             padding-left: 1rem;
@@ -87,10 +131,27 @@
             font-style: italic;
             margin-bottom: 1em;
         }
-        .dark .markdown-body blockquote { border-left-color: #4b5563; color: #9ca3af; }
-        .markdown-body img { max-width: 100%; border-radius: 8px; margin: 1em 0; }
-        .markdown-body hr { margin: 2em 0; border: 0; border-top: 1px solid #e5e7eb; }
-        .dark .markdown-body hr { border-top-color: #374151; }
+
+        .dark .markdown-body blockquote {
+            border-left-color: #4b5563;
+            color: #9ca3af;
+        }
+
+        .markdown-body img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1em 0;
+        }
+
+        .markdown-body hr {
+            margin: 2em 0;
+            border: 0;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .dark .markdown-body hr {
+            border-top-color: #374151;
+        }
     </style>
 </head>
 
@@ -386,7 +447,8 @@
             </button>
 
             <!-- Image Side -->
-            <div id="modal-slider-side" class="w-full md:w-3/5 h-64 md:h-auto bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
+            <div id="modal-slider-side"
+                class="w-full md:w-3/5 h-64 md:h-auto bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
                 <img id="modal-img" src="" alt="Project Preview"
                     class="absolute inset-0 w-full h-full object-cover transition-all duration-500">
 
@@ -429,14 +491,15 @@
                 </div>
 
                 <div id="detail-view" class="hidden flex flex-col h-full">
-                    <button onclick="toggleDetailView(false)" class="mb-4 text-primary-600 dark:text-primary-400 text-sm font-medium flex items-center gap-2 hover:underline">
+                    <button onclick="toggleDetailView(false)"
+                        class="mb-4 text-primary-600 dark:text-primary-400 text-sm font-medium flex items-center gap-2 hover:underline">
                         <i class="fas fa-arrow-left"></i> <span data-i18n="modal_back">Back to Summary</span>
                     </button>
                     <div id="readme-content" class="markdown-body overflow-y-auto pr-2">
                         <!-- README content injected via JS -->
                         <div class="flex flex-col items-center justify-center py-12 text-gray-400">
-                             <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
-                             <span data-i18n="modal_loading">Loading details...</span>
+                            <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
+                            <span data-i18n="modal_loading">Loading details...</span>
                         </div>
                     </div>
                 </div>
