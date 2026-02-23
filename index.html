@@ -30,6 +30,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -151,6 +156,37 @@
 
         .dark .markdown-body hr {
             border-top-color: #374151;
+        }
+
+        /* Custom Elegant Scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #cbd5e1;
+        }
+
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Prevent body scroll when modal is open */
+        body.modal-open {
+            overflow: hidden;
         }
     </style>
 </head>
@@ -437,7 +473,7 @@
 
         <!-- Modal Content -->
         <div id="modal-content"
-            class="bg-white dark:bg-dark-card w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-300 flex flex-col md:flex-row max-h-[90vh]"
+            class="bg-white dark:bg-dark-card w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-300 flex flex-col md:flex-row max-h-[90vh] relative"
             onclick="event.stopPropagation()">
 
             <!-- Close Button -->
@@ -448,7 +484,7 @@
 
             <!-- Image Side -->
             <div id="modal-slider-side"
-                class="w-full md:w-3/5 h-64 md:h-auto bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
+                class="w-full md:w-2/5 h-64 md:h-auto bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
                 <img id="modal-img" src="" alt="Project Preview"
                     class="absolute inset-0 w-full h-full object-cover transition-all duration-500">
 
@@ -473,29 +509,75 @@
             </div>
 
             <!-- Text Side -->
-            <div class="w-full md:w-2/5 p-8 flex flex-col overflow-y-auto" id="modal-text-side">
-                <div id="summary-view" class="flex flex-col h-full">
-                    <h3 id="modal-title" class="text-2xl font-bold font-heading mb-2">Project Title</h3>
-                    <div id="modal-tags" class="flex flex-wrap gap-2 mb-4">
+            <div class="w-full md:w-3/5 flex flex-col bg-white dark:bg-dark-card overflow-hidden" id="modal-text-side">
+                <div id="summary-view" class="flex-1 overflow-y-auto p-8 md:p-10 custom-scrollbar">
+                    <h3 id="modal-title" class="text-2xl font-bold font-heading mb-2 text-gray-900 dark:text-gray-200">
+                        Project Title</h3>
+                    <div id="modal-tags" class="flex flex-wrap gap-2 mb-6">
                         <!-- Tags injected via JS -->
                     </div>
-                    <p id="modal-desc" class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
+                    <p id="modal-desc" class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-8">
                         <!-- Description injected via JS -->
                     </p>
-                    <div class="flex gap-4 mt-auto">
+
+                    <!-- Project Info Sections -->
+                    <div class="flex flex-col gap-8">
+                        <!-- Project Details -->
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-200 mb-3"
+                                data-i18n="modal_project_details">
+                                Project Details
+                            </h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" style="gap: 1rem;">
+                                <div class="flex items-start" style="gap: 1rem;">
+                                    <span class="material-symbols-outlined text-gray-400 shrink-0"
+                                        style="flex-shrink: 0;">category</span>
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-medium" data-i18n="modal_project_type">
+                                            Project Type</p>
+                                        <p id="modal-project-type"
+                                            class="text-sm text-gray-700 dark:text-gray-200 font-semibold"></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start" style="gap: 1rem;">
+                                    <span class="material-symbols-outlined text-gray-400 shrink-0"
+                                        style="flex-shrink: 0;">corporate_fare</span>
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-medium" data-i18n="modal_company">Company
+                                        </p>
+                                        <p id="modal-project-company"
+                                            class="text-sm text-gray-700 dark:text-gray-200 font-semibold"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- My Role & Key Achievements -->
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-gray-200 mb-3"
+                                data-i18n="modal_role_achievements">
+                                My Role & Key Achievements
+                            </h3>
+                            <div id="modal-project-role-container">
+                                <!-- Roles will be injected here via JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 mt-10">
                         <button id="view-detail-btn"
-                            class="flex-1 py-2 text-center bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm font-medium">
+                            class="flex-1 py-3 px-6 text-center bg-primary-600 hover:bg-primary-700 text-white rounded-xl transition-all shadow-lg shadow-primary-500/20 font-bold text-sm mt-10">
                             View Detail
                         </button>
                     </div>
                 </div>
 
-                <div id="detail-view" class="hidden flex flex-col h-full">
+                <div id="detail-view" class="hidden flex flex-col h-full p-8 md:p-10">
                     <button onclick="toggleDetailView(false)"
                         class="mb-4 text-primary-600 dark:text-primary-400 text-sm font-medium flex items-center gap-2 hover:underline">
                         <i class="fas fa-arrow-left"></i> <span data-i18n="modal_back">Back to Summary</span>
                     </button>
-                    <div id="readme-content" class="markdown-body overflow-y-auto pr-2">
+                    <div id="readme-content" class="markdown-body overflow-y-auto pr-2 custom-scrollbar">
                         <!-- README content injected via JS -->
                         <div class="flex flex-col items-center justify-center py-12 text-gray-400">
                             <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
