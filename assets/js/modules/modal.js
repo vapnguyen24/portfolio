@@ -81,40 +81,42 @@ window.initModal = function (state) {
         const sliderSide = document.getElementById('modal-slider-side');
 
         if (show) {
-            summaryView.classList.add('hidden');
-            detailView.classList.remove('hidden');
-            
-            // Hide slider and expand text side
-            if (sliderSide) sliderSide.classList.add('hidden');
+            // Expand first to cover the area
             if (textSide) {
-                textSide.classList.remove('md:w-2/5');
+                textSide.classList.remove('md:w-3/5');
                 textSide.classList.add('md:w-full');
                 textSide.scrollTop = 0;
             }
+            
+            if (sliderSide) sliderSide.classList.add('hidden');
+            summaryView.classList.add('hidden');
+            detailView.classList.remove('hidden');
         } else {
+            if (sliderSide) sliderSide.classList.remove('hidden');
+            
             summaryView.classList.remove('hidden');
             detailView.classList.add('hidden');
             
-            // Show slider and shrink text side
-            if (sliderSide) sliderSide.classList.remove('hidden');
             if (textSide) {
                 textSide.classList.remove('md:w-full');
-                textSide.classList.add('md:w-2/5');
+                textSide.classList.add('md:w-3/5');
                 textSide.scrollTop = 0;
             }
         }
     };
 
-    // Fetch and render README
     async function loadReadme(path) {
         const container = document.getElementById('readme-content');
         if (!container) return;
 
-        // Show loading state
+        // Force reset scroll and show loading
+        container.scrollTop = 0;
         container.innerHTML = `
-            <div class="flex flex-col items-center justify-center py-12 text-gray-400">
-                <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
-                <span>Loading details...</span>
+            <div class="flex flex-col items-center justify-center py-20 text-gray-400">
+                <i class="fas fa-circle-notch fa-spin text-3xl mb-4 text-primary-500"></i>
+                <p class="text-sm font-medium animate-pulse" data-i18n="modal_loading">
+                    ${(window.translations && window.translations[state.lang]?.modal_loading) || 'Loading details...'}
+                </p>
             </div>
         `;
 
@@ -176,6 +178,45 @@ window.initModal = function (state) {
         title.innerText = p.title[state.lang];
         desc.innerHTML = p.desc[state.lang];
 
+        // New Project Fields
+        const typeEl = document.getElementById('modal-project-type');
+        const companyEl = document.getElementById('modal-project-company');
+        const roleContainer = document.getElementById('modal-project-role-container');
+
+        if (typeEl) typeEl.innerText = p.type[state.lang] || '';
+        if (companyEl) companyEl.innerText = p.company[state.lang] || '';
+        
+        if (roleContainer) {
+            roleContainer.innerHTML = '';
+            if (Array.isArray(p.role)) {
+                const ul = document.createElement('ul');
+                ul.className = 'space-y-3';
+                ul.innerHTML = p.role.map(task => {
+                    const content = task[state.lang];
+                    const colonIndex = content.indexOf(':');
+                    
+                    let renderedContent = content;
+                    if (colonIndex !== -1) {
+                        const title = content.substring(0, colonIndex + 1);
+                        const desc = content.substring(colonIndex + 1);
+                        renderedContent = `<span class="font-semibold text-gray-800 dark:text-gray-200">${title}</span>${desc}`;
+                    }
+
+                    return `
+                        <li class="flex items-start" style="margin-bottom: 0.75rem;">
+                            <span class="material-symbols-outlined text-primary-600 text-[18px] mt-0.5 shrink-0 select-none" style="margin-right: 0.75rem; flex-shrink: 0;">check_circle</span>
+                            <div class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                                ${renderedContent}
+                            </div>
+                        </li>
+                    `;
+                }).join('');
+                roleContainer.appendChild(ul);
+            } else {
+                roleContainer.innerHTML = `<p class="text-sm text-gray-600 dark:text-gray-400">${p.role[state.lang] || ''}</p>`;
+            }
+        }
+
         // Handle View Detail Button
         if (viewDetailBtn) {
             // Update translation for view detail button
@@ -185,34 +226,38 @@ window.initModal = function (state) {
                 : 'View Detail';
             viewDetailBtn.innerText = btnText;
 
-            // Update translation for back button and loading span
-            const backBtnText = (window.translations && window.translations[state.lang]) 
-                ? window.translations[state.lang].modal_back || 'Back to Summary'
-                : 'Back to Summary';
-            const loadingText = (window.translations && window.translations[state.lang]) 
-                ? window.translations[state.lang].modal_loading || 'Loading details...'
-                : 'Loading details...';
-            
-            const backBtnSpan = document.querySelector('[data-i18n="modal_back"]');
-            const loadingSpan = document.querySelector('[data-i18n="modal_loading"]');
-            if (backBtnSpan) backBtnSpan.innerText = backBtnText;
-            if (loadingSpan) loadingSpan.innerText = loadingText;
+            // Update translation for dynamic labels
+            const labelsToUpdate = [
+                { id: 'modal-back', key: 'modal_back', selector: '[data-i18n="modal_back"]' },
+                { id: 'modal-loading', key: 'modal_loading', selector: '[data-i18n="modal_loading"]' },
+                { key: 'modal_project_type', selector: '[data-i18n="modal_project_type"]' },
+                { key: 'modal_company', selector: '[data-i18n="modal_company"]' },
+                { key: 'modal_role', selector: '[data-i18n="modal_role"]' },
+                { key: 'modal_project_details', selector: '[data-i18n="modal_project_details"]' },
+                { key: 'modal_role_achievements', selector: '[data-i18n="modal_role_achievements"]' }
+            ];
+
+            labelsToUpdate.forEach(item => {
+                const el = document.querySelector(item.selector);
+                if (el && window.translations[state.lang][item.key]) {
+                    // Check if it's a field label and append colon if needed (or just use translation directly)
+                    el.innerText = window.translations[state.lang][item.key];
+                }
+            });
 
             // Remove old listeners and add new one
             const newBtn = viewDetailBtn.cloneNode(true);
             viewDetailBtn.parentNode.replaceChild(newBtn, viewDetailBtn);
             
             newBtn.addEventListener('click', () => {
-                window.toggleDetailView(true);
+                const path = state.lang === 'vi' 
+                    ? p.readmePath.replace('README.md', 'README_vi.md') 
+                    : p.readmePath;
+                
                 if (p.readmePath) {
-                    let path = p.readmePath;
-                    if (state.lang === 'vi') {
-                        path = path.replace('README.md', 'README_vi.md');
-                    }
                     loadReadme(path);
-                } else {
-                    document.getElementById('readme-content').innerHTML = '<p class="text-center py-12 text-gray-400">No additional details available for this project.</p>';
                 }
+                window.toggleDetailView(true);
             });
         }
 

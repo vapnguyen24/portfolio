@@ -32,7 +32,12 @@ window.translations = {
         modal_source_code: "Source Code",
         modal_back: "Back to Summary",
         modal_loading: "Loading details...",
-        btn_details_modal: "View Detail"
+        btn_details_modal: "View Detail",
+        modal_project_type: "Project Type",
+        modal_company: "Company",
+        modal_role: "My Role",
+        modal_project_details: "Project Details",
+        modal_role_achievements: "My Role & Key Achievements"
     },
     vi: {
         nav_about: "Giới thiệu",
@@ -66,6 +71,11 @@ window.translations = {
         modal_source_code: "Mã Nguồn",
         modal_back: "Trở lại",
         modal_loading: "Đang tải chi tiết...",
-        btn_details_modal: "Chi Tiết Dự Án"
+        btn_details_modal: "Chi Tiết Dự Án",
+        modal_project_type: "Loại dự án",
+        modal_company: "Đơn vị sở hữu",
+        modal_role: "Vai trò của tôi",
+        modal_project_details: "Chi tiết dự án",
+        modal_role_achievements: "Vai trò & Công việc chính"
     }
 };

@@ -21,7 +21,15 @@ window.projects = [
             "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
         ],
-        readmePath: "docs/casting/README.md"
+        readmePath: "docs/casting/README.md",
+        type: { en: "Company Project", vi: "Dự án công ty" },
+        company: { en: "IES - Industrial Embedded Solutions", vi: "IES - Industrial Embedded Solutions" },
+        role: [
+            { en: "WebRTC: Developed low-latency screen sharing and streaming logic", vi: "WebRTC: Phát triển tính năng chia sẻ màn hình độ trễ thấp" },
+            { en: "P2P Connection: Implemented stable peer-to-peer (P2P) networking", vi: "Kết nối P2P: Triển khai kết nối ngang hàng (P2P) ổn định" },
+            { en: "Audio Streaming: Built real-time audio transmission features", vi: "Audio Streaming: Xây dựng tính năng truyền âm thanh thời gian thực" },
+            { en: "Remote Control: Integrated remote control support and adaptive bitrate", vi: "Remote Control: Tích hợp hỗ trợ điều khiển từ xa và điều chỉnh bitrate" }
+        ]
     },
     {
         id: "project2",
@@ -46,7 +54,15 @@ window.projects = [
             "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1543286386-713df548e9cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
         ],
-        readmePath: "docs/nft/README.md"
+        readmePath: "docs/nft/README.md",
+        type: { en: "Personal Project", vi: "Dự án cá nhân" },
+        company: { en: "Personal Portfolio", vi: "Dự án cá nhân" },
+        role: [
+            { en: "Wallet Integration: Integrated WalletConnect (Reown AppKit) for secure web3 transactions", vi: "Tích hợp Ví: Tích hợp WalletConnect (Reown AppKit) để giao dịch web3 an toàn" },
+            { en: "NFT Minting: Developed NFT minting tool with IPFS/metadata support", vi: "Mint NFT: Phát triển công cụ mint NFT với hỗ trợ IPFS/metadata" },
+            { en: "Marketplace: Implemented real-time price tracking and collection features", vi: "Thị trường: Triển khai tính năng theo dõi giá và các chức năng bộ sưu tập" },
+            { en: "User Dashboard: Built secure dashboard for managing personal digital assets", vi: "Dashboard: Xây dựng dashboard bảo mật để quản lý tài sản số cá nhân" }
+        ]
     },
     {
         id: "project3",
@@ -70,7 +86,15 @@ window.projects = [
             "./assets/images/thingiq/img2.png",
             "./assets/images/thingiq/img3.png"
         ],
-        readmePath: "docs/thingiq/README.md"
+        readmePath: "docs/thingiq/README.md",
+        type: { en: "Company Project", vi: "Dự án công ty" },
+        company: { en: "IES - Industrial Embedded Solutions", vi: "IES - Industrial Embedded Solutions" },
+        role: [
+            { en: "Data Dashboard: Developed real-time monitoring dashboard using ECharts", vi: "Dashboard Dữ liệu: Phát triển dashboard giám sát thời gian thực với ECharts" },
+            { en: "Device Tracking: Integrated MapSDK for live device tracking and geofencing", vi: "Theo dõi Thiết bị: Tích hợp MapSDK để theo dõi trực tiếp và vùng an toàn" },
+            { en: "Real-time Updates: Implemented SocketIO/SSE for instant sensor data", vi: "Cập nhật Tức thì: Triển khai SocketIO/SSE để cập nhật dữ liệu cảm biến" },
+            { en: "Management: Built rule-based alert system and remote device management", vi: "Quản lý: Xây dựng hệ thống cảnh báo theo luật và quản lý thiết bị từ xa" }
+        ]
     },
     {
         id: "project4",
@@ -93,7 +117,15 @@ window.projects = [
             "./assets/images/finself/img1.png",
             "./assets/images/finself/img2.png"
         ],
-        readmePath: "docs/finself/README.md"
+        readmePath: "docs/finself/README.md",
+        type: { en: "Company Project", vi: "Dự án công ty" },
+        company: { en: "Finself", vi: "Finself" },
+        role: [
+            { en: "Expense Tracking: Implemented smart expense tracking and auto-categorization", vi: "Theo dõi Chi tiêu: Triển khai tính năng theo dõi thông minh và tự động phân loại" },
+            { en: "Budget Management: Developed custom budget plans and financial milestones", vi: "Quản lý Ngân sách: Phát triển kế hoạch ngân sách và các cột mốc tài chính" },
+            { en: "Data Analytics: Built interactive analytics with high-end visualization charts", vi: "Phân tích Dữ liệu: Xây dựng hệ thống phân tích với biểu đồ trực quan" },
+            { en: "Multi-currency: Integrated multi-currency support with real-time conversion", vi: "Đa Tiền tệ: Tích hợp hỗ trợ đa tiền tệ với chuyển đổi thời gian thực" }
+        ]
     },
     {
         id: "project5",
@@ -117,7 +149,15 @@ window.projects = [
             "./assets/images/magichands/img2.png",
             "./assets/images/magichands/img3.png"
         ],
-        readmePath: "docs/magichands/README.md"
+        readmePath: "docs/magichands/README.md",
+        type: { en: "Company Project", vi: "Dự án công ty" },
+        company: { en: "IES - Industrial Embedded Solutions", vi: "IES - Industrial Embedded Solutions" },
+        role: [
+            { en: "App Ecosystem: Built dual-app ecosystem for Customers and Partners", vi: "Hệ sinh thái: Xây dựng hệ thống ứng dụng kép cho Khách hàng và Đối tác" },
+            { en: "Service Discovery: Implemented service discovery with map-based live tracking", vi: "Tìm kiếm Dịch vụ: Triển khai tìm kiếm dịch vụ với theo dõi trên bản đồ" },
+            { en: "Scheduling: Developed smart scheduling engine and job management workflows", vi: "Đặt lịch: Phát triển bộ máy đặt lịch thông minh và quy trình quản lý" },
+            { en: "Payments: Integrated digital wallet and QR code payment system", vi: "Thanh toán: Tích hợp ví điện tử và hệ thống thanh toán mã QR" }
+        ]
     },
     {
         id: "project6",
@@ -141,6 +181,14 @@ window.projects = [
             "./assets/images/myfpl/img2.png",
             "./assets/images/myfpl/img3.png"
         ],
-        readmePath: "docs/myfpl/README.md"
+        readmePath: "docs/myfpl/README.md",
+        type: { en: "Company Project", vi: "Dự án công ty" },
+        company: { en: "FPT Education", vi: "FPT Education" },
+        role: [
+            { en: "Face Detection: Developed smart attendance with AI-powered algorithms", vi: "Nhận diện khuôn mặt: Phát triển tính năng điểm danh thông minh qua AI" },
+            { en: "Academic Dashboard: Built tracking system for grades and training progress", vi: "Bảng học tập: Xây dựng hệ thống theo dõi điểm và tiến độ rèn luyện" },
+            { en: "Tuition Management: Implemented payment integration and fee tracking", vi: "Quản lý học phí: Triển khai tích hợp thanh toán và theo dõi học phí" },
+            { en: "News & Notifications: Integrated real-time campus updates", vi: "Tin tức & Thông báo: Tích hợp cập nhật trường học theo thời gian thực" }
+        ]
     },
 ];
