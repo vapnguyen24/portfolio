@@ -14,12 +14,11 @@ window.projects = [
             en: "A powerful screen casting solution built with modern streaming technologies. The app supports low-latency screen sharing via WebRTC, stable peer-to-peer connections, and multi-device compatibility. Features include audio transmission, remote control support, and adaptive bitrate for smooth performance. The interface is designed for simplicity, fast connection setup, and optimal viewing experience.",
             vi: "Giải pháp truyền màn hình mạnh mẽ được xây dựng bằng các công nghệ streaming hiện đại. Ứng dụng hỗ trợ chia sẻ màn hình độ trễ thấp thông qua WebRTC, kết nối ngang hàng ổn định và tương thích đa thiết bị. Các tính năng bao gồm truyền âm thanh, hỗ trợ điều khiển từ xa và điều chỉnh bitrate để đảm bảo hiệu suất mượt mà. Giao diện được thiết kế đơn giản, kết nối nhanh và tối ưu trải nghiệm người xem."
         },
-        img: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        img: "./assets/images/casting/img1.png",
         tags: ["Flutter", "Android Native", "Native Modules", "WebRTC", "WebSocket", "Wifi-Direct", "Firebase"],
         images: [
-            "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            "./assets/images/casting/img1.png",
+            "./assets/images/casting/img2.png",
         ],
         readmePath: "docs/casting/README.md",
         type: { en: "Company Project", vi: "Dự án công ty" },
