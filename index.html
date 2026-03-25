@@ -509,7 +509,7 @@
             </div>
 
             <!-- Text Side -->
-            <div class="w-full md:w-3/5 flex flex-col bg-white dark:bg-dark-card overflow-hidden" id="modal-text-side">
+            <div class="w-full md:w-3/5 flex-1 min-h-0 flex flex-col bg-white dark:bg-dark-card overflow-hidden" id="modal-text-side">
                 <div id="summary-view" class="flex-1 overflow-y-auto p-8 md:p-10 custom-scrollbar">
                     <h3 id="modal-title" class="text-2xl font-bold font-heading mb-2 text-gray-900 dark:text-gray-200">
                         Project Title</h3>
@@ -572,12 +572,12 @@
                     </div>
                 </div>
 
-                <div id="detail-view" class="hidden flex flex-col h-full p-8 md:p-10">
+                <div id="detail-view" class="hidden flex flex-col flex-1 min-h-0 p-8 md:p-10">
                     <button onclick="toggleDetailView(false)"
                         class="mb-4 text-primary-600 dark:text-primary-400 text-sm font-medium flex items-center gap-2 hover:underline">
                         <i class="fas fa-arrow-left"></i> <span data-i18n="modal_back">Back to Summary</span>
                     </button>
-                    <div id="readme-content" class="markdown-body overflow-y-auto pr-2 custom-scrollbar">
+                    <div id="readme-content" class="markdown-body overflow-y-auto pr-2 custom-scrollbar" style="max-height: calc(90vh - 120px)">
                         <!-- README content injected via JS -->
                         <div class="flex flex-col items-center justify-center py-12 text-gray-400">
                             <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
