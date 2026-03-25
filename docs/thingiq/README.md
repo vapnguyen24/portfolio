@@ -5,6 +5,10 @@
 *   **Industry/Domain:** Industrial Internet of Things (IIoT) & Smart Asset Monitoring
 *   **Platform:** Cross-platform (iOS & Android) built with React Native & Expo
 *   **Short Description:** ThingIQ is a robust industrial mobile application designed to bridge the gap between complex IoT hardware and real-time operational management. It enables enterprises to monitor, configure, and maintain a vast fleet of devices through a unified, high-performance interface.
+*   **Download:**
+    *   [Google Play Store](https://play.google.com/store/apps/details?id=com.ies.thingiq)
+    *   [Apple App Store](https://apps.apple.com/vn/app/thingiq/id6747958457)
+*   **Website:** [https://thingiq.ai/](https://thingiq.ai/)
 
 ---
 

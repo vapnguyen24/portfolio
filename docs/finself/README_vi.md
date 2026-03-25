@@ -5,6 +5,10 @@
 - **Lĩnh vực:** Fintech / Tài chính cá nhân / Năng suất
 - **Nền tảng:** Đa nền tảng (iOS & Android)
 - **Mô tả ngắn:** Finself là một ứng dụng tự quản lý tài chính toàn diện được thiết kế để trao cho cá nhân quyền kiểm soát hoàn toàn sức khỏe tài chính của họ. Ứng dụng kết hợp tính năng theo dõi chi tiêu trực quan với các công cụ lập ngân sách mạnh mẽ và thông tin phân tích tài chính sâu sắc để giúp người dùng đạt được các mục tiêu tài chính của mình.
+- **Tải về:**
+  - [Google Play Store](https://play.google.com/store/apps/details?id=vn.co.finself.app)
+  - [Apple App Store](https://apps.apple.com/vn/app/finself-ai-money-tracker/id6751235248)
+- **Website:** [https://finself.app/vi](https://finself.app/vi)
 
 ---
 
