@@ -7,8 +7,8 @@
 *   **Mô tả:** Một hệ sinh thái ứng dụng kép toàn diện kết nối khách hàng với các chuyên gia cung cấp dịch vụ chuyên nghiệp. Nền tảng đơn giản hóa quy trình tìm kiếm, đặt lịch và quản lý các dịch vụ tại gia như dọn dẹp, sửa chữa và bảo trì.
 *   **Tải về:**
     *   [Google Play Store](https://play.google.com/store/apps/details?id=com.ies.magichands)
-    *   [Apple App Store](#)
-*   **Website:** [magichands.vn](#)
+    *   [Apple App Store](https://apps.apple.com/vn/app/magichands-home-services/id6480405970)
+*   **Website:** [https://magichands.com.vn/](https://magichands.com.vn/)
 
 ---
 
