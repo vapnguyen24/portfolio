@@ -5,6 +5,10 @@
 *   **Lĩnh vực:** Dịch vụ tại gia theo yêu cầu & Thị trường cung ứng dịch vụ
 *   **Nền tảng:** Đa nền tảng (iOS & Android)
 *   **Mô tả:** Một hệ sinh thái ứng dụng kép toàn diện kết nối khách hàng với các chuyên gia cung cấp dịch vụ chuyên nghiệp. Nền tảng đơn giản hóa quy trình tìm kiếm, đặt lịch và quản lý các dịch vụ tại gia như dọn dẹp, sửa chữa và bảo trì.
+*   **Tải về:**
+    *   [Google Play Store](https://play.google.com/store/apps/details?id=com.ies.magichands)
+    *   [Apple App Store](#)
+*   **Website:** [magichands.vn](#)
 
 ---
 

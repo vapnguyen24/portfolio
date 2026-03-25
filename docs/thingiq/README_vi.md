@@ -5,6 +5,10 @@
 *   **Lĩnh vực:** Internet vạn vật công nghiệp (IIoT) & Giám sát tài sản thông minh
 *   **Nền tảng:** Đa nền tảng (iOS & Android) - Xây dựng với React Native & Expo
 *   **Mô tả ngắn:** ThingIQ là một ứng dụng di động công nghiệp mạnh mẽ được thiết kế để thu hẹp khoảng cách giữa phần cứng IoT phức tạp và quản lý vận hành theo thời gian thực. Nó cho phép các doanh nghiệp giám sát, cấu hình và bảo trì một đội ngũ thiết bị khổng lồ thông qua một giao diện thống nhất, hiệu suất cao.
+*   **Tải về:**
+    *   [Google Play Store](https://play.google.com/store/apps/details?id=com.ies.thingiq)
+    *   [Apple App Store](https://apps.apple.com/vn/app/thingiq/id6747958457)
+*   **Website:** [https://thingiq.ai/](https://thingiq.ai/)
 
 ---
 

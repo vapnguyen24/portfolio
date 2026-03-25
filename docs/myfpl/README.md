@@ -5,6 +5,9 @@
 *   **Industry/Domain:** EdTech (Education Technology) / Campus Management System
 *   **Platform:** Cross-platform (iOS & Android)
 *   **Short Description:** MyFPL is a comprehensive mobile ecosystem designed for FPT Education (FPL). It serves as a centralized hub for students to manage their academic journey and for parents to monitor their children's progress in real-time. The suite consists of two dedicated applications: **MyFPL Student** and **MyFPL Parent**.
+*   **Download:**
+    *   [Google Play Store](https://play.google.com/store/apps/details?id=com.emotionstudent)
+    *   [Apple App Store](https://apps.apple.com/vn/app/myfpl/id1604483339)
 
 ---
 

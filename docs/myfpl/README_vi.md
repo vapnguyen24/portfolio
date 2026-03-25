@@ -5,6 +5,9 @@
 *   **Lĩnh vực:** EdTech (Công nghệ giáo dục) / Hệ thống quản lý trường học
 *   **Nền tảng:** Đa nền tảng (iOS & Android)
 *   **Mô tả ngắn:** MyFPL là một hệ sinh thái di động toàn diện được thiết kế cho Tổ chức Giáo dục FPT (FPL). Đây là trung tâm quản lý hành trình học tập cho sinh viên và giúp phụ huynh theo dõi tiến độ của con em mình theo thời gian thực. Bộ giải pháp bao gồm hai ứng dụng chuyên biệt: **MyFPL Student** và **MyFPL Parent**.
+*   **Tải về:**
+    *   [Google Play Store](https://play.google.com/store/apps/details?id=com.emotionstudent)
+    *   [Apple App Store](https://apps.apple.com/vn/app/myfpl/id1604483339)
 
 ---
 

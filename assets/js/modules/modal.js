@@ -131,8 +131,14 @@ window.initModal = function (state) {
                 // This is a simple fix: replace ./ with the directory path
                 const dirPath = path.split('/').slice(0, -1).join('/') + '/';
                 const processedMarkdown = markdown.replace(/!\[(.*?)\]\(\.\/(.*?)\)/g, `![$1](${dirPath}$2)`);
-                
-                container.innerHTML = window.marked.parse(processedMarkdown);
+
+                const renderer = new window.marked.Renderer();
+                renderer.link = function ({ href, title, tokens }) {
+                    const text = tokens.map(t => t.raw).join('');
+                    const titleAttr = title ? ` title="${title}"` : '';
+                    return `<a href="${href}"${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;
+                };
+                container.innerHTML = window.marked.parse(processedMarkdown, { renderer });
             } else {
                 container.innerHTML = '<p class="text-red-500">Error: Markdown parser not loaded.</p>';
             }

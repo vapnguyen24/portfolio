@@ -5,6 +5,10 @@
 - **Industry/Domain:** Fintech / Personal Finance / Productivity
 - **Platform:** Cross-platform (iOS & Android)
 - **Short Description:** Finself is a comprehensive financial self-management application designed to empower individuals with full control over their financial health. It combines intuitive expense tracking with powerful budgeting tools and deep financial insights to help users achieve their financial goals.
+- **Download:**
+  - [Google Play Store](https://play.google.com/store/apps/details?id=vn.co.finself.app)
+  - [Apple App Store](https://apps.apple.com/vn/app/finself-ai-money-tracker/id6751235248)
+- **Website:** [https://finself.app/vi](https://finself.app/vi)
 
 ---
 
@@ -113,4 +117,3 @@ The Finself App features a modern, clean UI/UX designed with a "Mobile First" ap
 ---
 
 *Developed for Finself.*
-

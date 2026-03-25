@@ -5,6 +5,10 @@
 *   **Industry/Domain:** On-demand Home Services & Provider Marketplace
 *   **Platform:** Cross-platform (iOS & Android)
 *   **Description:** A comprehensive dual-app ecosystem connecting customers with professional service providers. The platform streamlines the process of discovering, booking, and managing home services such as cleaning, repairs, and maintenance.
+*   **Download:**
+    *   [Google Play Store](https://play.google.com/store/apps/details?id=com.ies.magichands)
+    *   [Apple App Store](https://apps.apple.com/vn/app/magichands-home-services/id6480405970)
+*   **Website:** [https://magichands.com.vn/](https://magichands.com.vn/)
 
 ---
 
