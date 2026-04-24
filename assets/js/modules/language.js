@@ -14,7 +14,8 @@ window.initLanguage = function (state) {
         });
 
         // Update Toggle Text
-        const langText = lang === 'en' ? 'EN' : 'VI';
+        const langText = lang === 'en' ? 'VI' : 'EN';
+        document.documentElement.lang = lang;
         const toggle = document.getElementById('lang-toggle');
         const toggleMobile = document.getElementById('lang-toggle-mobile');
 
