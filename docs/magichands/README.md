@@ -62,16 +62,7 @@ The platform architecture leverages a **Modular Monolith** backend supporting tw
 
 ---
 
-## 7. UI & Screenshots
-The design philosophy emphasizes **clarity, speed, and trust**. Using a modern "Glassmorphism" aesthetic with vibrant accents, the interface ensures a premium feel across all platforms.
-
-![Customer App Dashboard](./screenshots/customer_dashboard.png)
-![Provider Booking Management](./screenshots/partner_booking.png)
-![Secure Checkout Flow](./screenshots/payment_flow.png)
-
----
-
-## 8. Security & Performance
+## 7. Security & Performance
 *   **Authentication:** Robust security via JWT tokens and encrypted session management.
 *   **Data Protection:** Sensitive user data is stored using `react-native-encrypted-storage` and `react-native-keychain`.
 *   **Network Optimization:** Axios with interceptors for automatic token refresh and React Query for efficient data caching.
@@ -79,14 +70,14 @@ The design philosophy emphasizes **clarity, speed, and trust**. Using a modern "
 
 ---
 
-## 9. Achievements
+## 8. Achievements
 *   **Performance:** Achieved 99.8% crash-free sessions across 10,000+ active users.
 *   **Efficiency:** Reduced average booking time from 15 minutes to under 2 minutes.
 *   **Reliability:** Successfully handled 50,000+ service completions with a 4.8/5.0 average user rating.
 
 ---
 
-## 10. Future Roadmap
+## 9. Future Roadmap
 *   **AI Integration:** implementing smart-matching algorithms to predict user needs and optimize provider routes.
 *   **Expansion:** Localizing the platform for multi-regional support including currency and language adaptations.
 *   **Insurance Integration:** Launching an integrated service guarantee and insurance module for enhanced user peace of mind.

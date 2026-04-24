@@ -61,17 +61,7 @@
 
 ---
 
-## 7. Giao diện & Hình ảnh
-MyFPL App sở hữu giao diện hiện đại, sạch sẽ và trực quan, được thiết kế tập trung vào tính tiện dụng và khả năng tiếp cận.
-
-![Student Dashboard](./screenshots/screen1.png)
-![Attendance Face Detection](./screenshots/screen2.png)
-![Academic Schedule](./screenshots/screen3.png)
-![Tuition & Payment](./screenshots/screen4.png)
-
----
-
-## 8. Bảo mật & Hiệu suất
+## 7. Bảo mật & Hiệu suất
 *   **Xác thực:** Xác thực đa yếu tố bao gồm Đăng nhập Google và các tùy chọn sinh trắc học.
 *   **Bảo vệ dữ liệu:** Mã hóa đầu cuối cho các dữ liệu sinh viên nhạy cảm và xử lý thanh toán bảo mật.
 *   **Tối ưu hóa hiệu suất:** 
@@ -81,7 +71,7 @@ MyFPL App sở hữu giao diện hiện đại, sạch sẽ và trực quan, đ�
 
 ---
 
-## 9. Thành tựu
+## 8. Thành tựu
 *   **Độ ổn định cao:** Tỷ lệ 99.9% không lỗi được giám sát qua AppCenter.
 *   **Mức độ tương tác:** Phục vụ hàng ngàn sinh viên và phụ huynh hoạt động mỗi ngày.
 *   **Khả năng mở rộng:** Xử lý thành công lưu lượng truy cập lớn trong giai đoạn công bố điểm và đăng ký môn học.
@@ -89,7 +79,7 @@ MyFPL App sở hữu giao diện hiện đại, sạch sẽ và trực quan, đ�
 
 ---
 
-## 10. Lộ trình phát triển
+## 9. Lộ trình phát triển
 *   **Trợ lý học tập AI:** Đưa ra các khuyến nghị học tập cá nhân hóa dựa trên kết quả học tập.
 *   **Cộng đồng sinh viên:** Tích hợp các tính năng mạng xã hội cho các câu lạc bộ và hoạt động ngoại khóa.
 *   **Phân tích nâng cao:** Phân tích chi tiết xu hướng học tập và cảnh báo dự đoán cho các sinh viên có nguy cơ học yếu.

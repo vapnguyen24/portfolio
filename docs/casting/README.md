@@ -49,18 +49,7 @@ Project Casting utilizes a **Decentralized Peer-to-Peer Architecture**. The Rece
 
 ![System Architecture Diagram](https://placehold.co/800x400?text=System+Architecture+Diagram)
 
-## 7. UI & Screenshots
-The interface is designed with a "Single Button Connectivity" philosophy, focusing on clarity and ease of use. It features a sleek dark mode interface with vibrant accent colors to indicate active streaming states.
-
-### Receiver Interface
-![Screenshot 1](./screenshots/screen1.png)
-*Figure 1: Receiver dashboard showing connection status and Wi-Fi Direct credentials.*
-
-### Sender Interface
-![Screenshot 2](./screenshots/screen2.png)
-*Figure 2: Sender application with one-tap "Start Casting" control and device selection.*
-
-## 8. Security & Performance
+## 7. Security & Performance
 - **Authentication:** P2P connections are secured via Wi-Fi Direct's WPA2-PSK encryption.
 - **Data Protection:** WebRTC streams are encrypted end-to-end using DTLS-SRTP.
 - **Performance Optimization:**
@@ -68,12 +57,12 @@ The interface is designed with a "Single Button Connectivity" philosophy, focusi
     - **Adaptive Bitrate:** Dynamically scales video quality based on network throughput to prevent choppiness.
     - **Jitter Buffer Management:** Custom audio jitter buffers to maintain perfectly synced sound.
 
-## 9. Achievements
+## 8. Achievements
 - **Latency:** Achieved sub-150ms end-to-end latency on standard consumer hardware.
 - **Stability:** Maintained 60fps streaming for over 4 hours without thermal throttling.
 - **User Feedback:** Beta testers highlighted the ease of connection via Wi-Fi Direct vs. traditional Miracast/Chromecast.
 
-## 10. Future Roadmap
+## 9. Future Roadmap
 - **Planned Features:**
     - **Remote Control (HID):** Allow the receiver to control the sender device (touch/keyboard/mouse).
     - **Multi-Sender Support:** Split-screen view for multiple simultaneous casters.

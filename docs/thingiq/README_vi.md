@@ -64,21 +64,7 @@ ThingIQ tuân theo kiến trúc **Feature-based MVVM (Model-View-ViewModel)**, �
 
 ---
 
-## 7. Giao diện & Hình ảnh
-Giao diện sử dụng hệ thống thiết kế tùy chỉnh được xây dựng trên **Shopify Restyle**, tập trung vào độ tin cậy công nghiệp và mật độ thông tin cao.
-
-![Đăng nhập & Xác thực](./screenshots/login.png)
-*Hình 1: Xác thực bảo mật với mã OTP.*
-
-![Dashboard thiết bị](./screenshots/home.png)
-*Hình 2: Trạng thái đội ngũ thiết bị toàn diện và giám sát thời gian thực.*
-
-![Trải nghiệm Chế độ tối](./screenshots/dark.png)
-*Hình 3: Giao diện tối được tối ưu hóa cho việc sử dụng trong môi trường thiếu sáng.*
-
----
-
-## 8. Bảo mật & Hiệu suất
+## 7. Bảo mật & Hiệu suất
 *   **Xác thực bảo mật:** Hỗ trợ xác thực đa yếu tố với OTP và quản lý định danh qua Firebase.
 *   **Toàn vẹn dữ liệu:** Mã hóa HTTPS/TLS 1.3 cho toàn bộ lưu lượng API và lưu trữ an toàn các thông tin nhạy cảm qua MMKV.
 *   **Tối ưu hóa hiệu suất:** 
@@ -88,7 +74,7 @@ Giao diện sử dụng hệ thống thiết kế tùy chỉnh được xây d�
 
 ---
 
-## 9. Thành tựu
+## 8. Thành tựu
 *   **Độ ổn định doanh nghiệp:** Quản lý thành công các phiên bản thiết bị trên nhiều cấu hình phần cứng Android và iOS khác nhau.
 *   **Tính khả dụng cao:** Hệ thống cảnh báo thời gian thực đáng tin cậy với độ trễ gửi thông báo < 1s.
 *   **Đa đối tượng (Multi-tenancy):** Hỗ trợ mạnh mẽ cho các cấu trúc phân cấp nhiều công ty trong một phiên bản ứng dụng duy nhất.
@@ -96,7 +82,7 @@ Giao diện sử dụng hệ thống thiết kế tùy chỉnh được xây d�
 
 ---
 
-## 10. Lộ trình phát triển
+## 9. Lộ trình phát triển
 *   **Cải tiến đăng ký thiết bị:** Wizard hướng dẫn từng bước để cài đặt thiết bị mới.
 *   **Phân tích nâng cao:** Báo cáo bảo trì dự đoán dựa trên dữ liệu cảm biến lịch sử.
 *   **Tích hợp thanh toán:** Quản lý đăng ký thuê bao trong ứng dụng cho các tính năng giám sát nâng cao.

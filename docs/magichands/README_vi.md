@@ -62,16 +62,7 @@ Kiến trúc nền tảng tận dụng backend **Modular Monolith** hỗ trợ h
 
 ---
 
-## 7. Giao diện & Hình ảnh
-Triết lý thiết kế nhấn mạnh vào **sự rõ ràng, tốc độ và tin cậy**. Sử dụng thẩm mỹ "Glassmorphism" hiện đại với các màu sắc nổi bật, giao diện đảm bảo mang lại cảm giác cao cấp trên mọi nền tảng.
-
-![Dashboard Khách hàng](./screenshots/customer_dashboard.png)
-![Quản lý đặt lịch của Đối tác](./screenshots/partner_booking.png)
-![Luồng thanh toán bảo mật](./screenshots/payment_flow.png)
-
----
-
-## 8. Bảo mật & Hiệu suất
+## 7. Bảo mật & Hiệu suất
 *   **Xác thực:** Bảo mật mạnh mẽ qua token JWT và quản lý phiên làm việc mã hóa.
 *   **Bảo vệ dữ liệu:** Dữ liệu người dùng nhạy cảm được lưu trữ bằng `react-native-encrypted-storage` và `react-native-keychain`.
 *   **Tối ưu hóa mạng:** Sử dụng Axios với interceptors để tự động làm mới token và React Query để caching dữ liệu hiệu quả.
@@ -79,14 +70,14 @@ Triết lý thiết kế nhấn mạnh vào **sự rõ ràng, tốc độ và ti
 
 ---
 
-## 9. Thành tựu
+## 8. Thành tựu
 *   **Hiệu suất:** Đạt tỷ lệ 99.8% phiên hoạt động không lỗi trên hơn 10.000 người dùng tích cực.
 *   **Hiệu quả:** Giảm thời gian đặt lịch trung bình từ 15 phút xuống dưới 2 phút.
 *   **Độ tin cậy:** Hoàn thành thành công hơn 50.000 yêu cầu dịch vụ với đánh giá trung bình 4.8/5.0 từ người dùng.
 
 ---
 
-## 10. Lộ trình phát triển
+## 9. Lộ trình phát triển
 *   **Tích hợp AI:** Triển khai các thuật toán kết nối thông minh để dự đoán nhu cầu người dùng và tối ưu hóa tuyến đường cho người cung cấp.
 *   **Mở rộng:** Địa phương hóa nền tảng để hỗ trợ đa khu vực bao gồm điều chỉnh tiền tệ và ngôn ngữ.
 *   **Tích hợp bảo hiểm:** Ra mắt module bảo hành dịch vụ và bảo hiểm tích hợp để người dùng thêm yên tâm.

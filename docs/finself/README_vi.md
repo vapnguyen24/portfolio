@@ -75,21 +75,7 @@
 
 ---
 
-## 7. Giao diện & Hình ảnh
-Finself App sở hữu giao diện UI/UX hiện đại, sạch sẽ, được thiết kế theo hướng "Mobile First". Ứng dụng tuân thủ nghiêm ngặt các quy tắc Material Design 3, mang lại trải nghiệm mượt mà với các hiệu ứng micro-animations tinh tế và ngôn ngữ thiết kế đồng nhất.
-
-![Dashboard Tổng quan](./screenshots/dashboard.png)
-*Hình 1: Dashboard chính hiển thị tổng quan sức khỏe tài chính.*
-
-![Danh sách giao dịch](./screenshots/transactions.png)
-*Hình 2: Chế độ xem chi tiết các giao dịch đã phân loại.*
-
-![Trang phân tích](./screenshots/analytics.png)
-*Hình 3: Phân tích chi tiêu và biểu đồ thói quen.*
-
----
-
-## 8. Bảo mật & Hiệu suất
+## 7. Bảo mật & Hiệu suất
 - **Xác thực:** Đăng nhập bảo mật qua Firebase Auth, hỗ trợ Email/Mật khẩu, Google Sign-In và Apple ID.
 - **Bảo vệ dữ liệu:** Mọi dữ liệu nhạy cảm của người dùng đều được mã hóa khi lưu trữ và khi truyền tải (HTTPS/SSL).
 - **Kỹ thuật tối ưu hóa:**
@@ -100,7 +86,7 @@ Finself App sở hữu giao diện UI/UX hiện đại, sạch sẽ, được th
 
 ---
 
-## 9. Thành tựu
+## 8. Thành tựu
 - **Độ ổn định:** Đạt tỷ lệ 99.9% không lỗi (crash-free) trong giai đoạn thử nghiệm.
 - **Hiệu suất:** Duy trì mức 60 FPS ổn định trên các thiết bị tầm trung.
 - **Phản hồi người dùng:** Người dùng thử nghiệm đánh giá cao tính năng "Mục tiêu ngân sách" và việc nhập chi tiêu "Một chạm" trực quan.
@@ -108,7 +94,7 @@ Finself App sở hữu giao diện UI/UX hiện đại, sạch sẽ, được th
 
 ---
 
-## 10. Lộ trình phát triển
+## 9. Lộ trình phát triển
 - **Cố vấn tài chính AI:** Tích hợp các mô hình ngôn ngữ lớn (LLM) để cung cấp mẹo chi tiêu cá nhân hóa và chiến lược tiết kiệm.
 - **Tự động hóa hóa đơn:** Tự động phát hiện và nhắc nhở người dùng về các dịch vụ đăng ký định kỳ.
 - **Chia sẻ gia đình:** Lập ngân sách cộng tác cho các hộ gia đình hoặc nhóm du lịch.

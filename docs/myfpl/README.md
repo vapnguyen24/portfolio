@@ -61,17 +61,7 @@
 
 ---
 
-## 7. UI & Screenshots
-The MyFPL App features a modern, clean, and intuitive interface designed with a focus on usability and accessibility.
-
-![Student Dashboard](./screenshots/screen1.png)
-![Attendance Face Detection](./screenshots/screen2.png)
-![Academic Schedule](./screenshots/screen3.png)
-![Tuition & Payment](./screenshots/screen4.png)
-
----
-
-## 8. Security & Performance
+## 7. Security & Performance
 *   **Authentication:** Multi-factor authentication including Google Sign-In and biometric options.
 *   **Data Protection:** End-to-end encryption for sensitive student data and secure payment processing.
 *   **Performance Optimization:** 
@@ -81,7 +71,7 @@ The MyFPL App features a modern, clean, and intuitive interface designed with a 
 
 ---
 
-## 9. Achievements
+## 8. Achievements
 *   **High Stability:** 99.9% crash-free rate monitored via AppCenter.
 *   **User Engagement:** Serving thousands of active students and parents daily.
 *   **Scalability:** Successfully handles peak traffic during grade release and course registration periods.
@@ -89,7 +79,7 @@ The MyFPL App features a modern, clean, and intuitive interface designed with a 
 
 ---
 
-## 10. Future Roadmap
+## 9. Future Roadmap
 *   **AI Study Assistant:** Personalized learning recommendations based on academic performance.
 *   **Community Hub:** Integrated social features for student clubs and extracurricular activities.
 *   **Enhanced Analytics:** Detailed performance trends and predictive alerts for at-risk students.
