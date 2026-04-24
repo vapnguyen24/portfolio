@@ -21,7 +21,10 @@ async function build() {
     console.log('📦 Copying files to dist...');
     fs.copySync(path.join(rootDir, 'assets'), path.join(distDir, 'assets'));
     fs.copySync(path.join(rootDir, 'docs'), path.join(distDir, 'docs'));
-    fs.copySync(path.join(rootDir, 'index.html'), path.join(distDir, 'index.html'));
+    const htmlFiles = globSync('*.html', { cwd: rootDir });
+    for (const htmlFile of htmlFiles) {
+        fs.copySync(path.join(rootDir, htmlFile), path.join(distDir, htmlFile));
+    }
 
     // Copy CV if it exists in root (check if it's referenced in index.html)
     // In index.html line 147: href="assets/cv.Nguyen_Thanh_Vinh_Mobile_Developer_CV.pdf" - so it's already in assets.

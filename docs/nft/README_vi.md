@@ -68,19 +68,7 @@ MetaChain được xây dựng bằng nguyên tắc **Clean Architecture**, đ�
 - **Data Layer:** Xử lý giao tiếp API (Dio), lưu trữ cục bộ (Shared Preferences) và tương tác blockchain.
 - **Modular DI:** Mỗi tính năng (Auth, NFT, Marketplace) được đóng gói trong module tiêm phụ thuộc (dependency injection) riêng để bảo trì tốt hơn.
 
-## 7. Giao diện & Hình ảnh
-MetaChain sở hữu hệ thống thiết kế hiện đại, cao cấp, hỗ trợ giao diện động (Light/Dark mode) và các hiệu ứng micro-animations mượt mà.
-
-![Ảnh chụp màn hình 1](./screenshots/screen1.png)
-*Giao diện khám phá & Các bộ sưu tập xu hướng*
-
-![Ảnh chụp màn hình 2](./screenshots/screen2.png)
-*Chi tiết NFT & Đấu giá thời gian thực*
-
-![Ảnh chụp màn hình 3](./screenshots/screen3.png)
-*Hồ sơ người dùng & Tích hợp ví*
-
-## 8. Bảo mật & Hiệu suất
+## 7. Bảo mật & Hiệu suất
 
 ### 🔐 Bảo mật
 - **Xác thực phi đối xứng:** Đăng nhập dựa trên ví bằng cách ký số (luồng Nonce/Verify).
@@ -92,13 +80,13 @@ MetaChain sở hữu hệ thống thiết kế hiện đại, cao cấp, hỗ tr
 - **Caching thông minh:** Caching nhiều lớp cho hình ảnh và metadata của NFT để giảm thiểu băng thông mạng.
 - **Phản hồi mượt mà:** Hiệu ứng Shimmer và chuyển động Lottie cung cấp phản hồi hình ảnh tức thì trong các thao tác bất đồng bộ.
 
-## 9. Thành tựu
+## 8. Thành tựu
 - **Hiệu suất:** Đạt thời gian phản hồi API < 200ms cho các truy vấn thị trường.
 - **Độ ổn định:** Duy trì thời gian hoạt động 99.99% của API sản xuất trên Azure.
 - **UI/UX:** Nhận được phản hồi tích cực về luồng kết nối ví liền mạch.
 - **Kiểm thử:** Độ bao phủ mã nguồn (code coverage) trên 85% cho các logic nghiệp vụ quan trọng trong domain layer.
 
-## 10. Lộ trình phát triển
+## 9. Lộ trình phát triển
 - **Mở rộng đa chuỗi:** Hỗ trợ các mạng Polygon, Solana và BSC.
 - **Nhắn tin P2P:** Hệ thống chat tích hợp cho người mua và người bán thương lượng.
 - **Tính năng mạng xã hội:** Bảng tin cộng đồng, theo dõi và hoạt động của các nghệ sĩ.

@@ -68,19 +68,7 @@ MetaChain is built using **Clean Architecture** principles, ensuring a strict se
 - **Data Layer:** Handles API communication (Dio), local storage (Shared Preferences), and blockchain interactions.
 - **Modular DI:** Each feature (Auth, NFT, Marketplace) is encapsulated in its own dependency injection module for better maintainability.
 
-## 7. UI & Screenshots
-MetaChain features a premium, modern design system with support for dynamic theming (Light/Dark mode) and smooth micro-animations.
-
-![Screenshot 1](./screenshots/screen1.png)
-*Discovery Dashboard & Trending Collections*
-
-![Screenshot 2](./screenshots/screen2.png)
-*NFT Detail View & Real-time Bidding*
-
-![Screenshot 3](./screenshots/screen3.png)
-*User Profile & Wallet Integration*
-
-## 8. Security & Performance
+## 7. Security & Performance
 
 ### 🔐 Security
 - **Asymmetric Authentication:** Wallet-based login using cryptographic signing (Nonce/Verify flow).
@@ -92,13 +80,13 @@ MetaChain features a premium, modern design system with support for dynamic them
 - **Intelligent Caching:** Multi-layered caching for NFT images and metadata to minimize network overhead.
 - **Smooth Feedback:** Shimmer effects and Lottie animations provide immediate visual feedback during async operations.
 
-## 9. Achievements
+## 8. Achievements
 - **Performance:** Achieved < 200ms API response time for marketplace queries.
 - **Stablity:** Maintained 99.99% uptime of the production API on Azure.
 - **UI/UX:** Received glowing feedback for the seamless wallet connection flow.
 - **Testing:** 85%+ code coverage across critical business logic in the domain layer.
 
-## 10. Future Roadmap
+## 9. Future Roadmap
 - **Multi-Chain Expansion:** Support for Polygon, Solana, and BSC networks.
 - **P2P Messaging:** Integrated chat system for buyers and sellers to negotiate deals.
 - **Social Features:** Community feeds, follows, and activity tracking for artists.

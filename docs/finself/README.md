@@ -75,21 +75,7 @@
 
 ---
 
-## 7. UI & Screenshots
-The Finself App features a modern, clean UI/UX designed with a "Mobile First" approach. It strictly adheres to Material Design 3 guidelines, offering a fluid experience with subtle micro-animations and a consistent design language.
-
-![Dashboard Overview](./screenshots/dashboard.png)
-*Figure 1: Main Dashboard showing financial health overview.*
-
-![Transaction List](./screenshots/transactions.png)
-*Figure 2: Detailed view of categorized transactions.*
-
-![Analytics Page](./screenshots/analytics.png)
-*Figure 3: Spending analytics and behavior charts.*
-
----
-
-## 8. Security & Performance
+## 7. Security & Performance
 - **Authentication:** Secure login via Firebase Auth, supporting Email/Password, Google Sign-In, and Apple ID.
 - **Data Protection:** All sensitive user data is encrypted at rest and in transit (HTTPS/SSL).
 - **Optimization Techniques:**
@@ -100,7 +86,7 @@ The Finself App features a modern, clean UI/UX designed with a "Mobile First" ap
 
 ---
 
-## 9. Achievements
+## 8. Achievements
 - **Stability:** Achieved a 99.9% crash-free rate during the pilot phase.
 - **Performance:** Maintained a consistent 60 FPS on mid-range devices.
 - **User Feedback:** Beta testers praised the "Budgeting Goal" feature and the intuitive "One-tap Expense" entry.
@@ -108,7 +94,7 @@ The Finself App features a modern, clean UI/UX designed with a "Mobile First" ap
 
 ---
 
-## 10. Future Roadmap
+## 9. Future Roadmap
 - **AI Financial Advisor:** Integrating LLMs to provide personalized spending tips and saving strategies.
 - **Bill Automation:** Automatically detecting and reminding users of recurring subscriptions.
 - **Family Sharing:** Collaborative budgeting for households or travel groups.

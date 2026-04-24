@@ -49,18 +49,7 @@ Project Casting sử dụng **Kiến trúc mạng ngang hàng phi tập trung (D
 
 ![Sơ đồ kiến trúc hệ thống](https://placehold.co/800x400?text=System+Architecture+Diagram)
 
-## 7. Giao diện & Hình ảnh
-Giao diện được thiết kế theo triết lý "Kết nối một chạm", tập trung vào sự rõ ràng và dễ sử dụng. Ứng dụng có giao diện chế độ tối mượt mà với các màu sắc tạo điểm nhấn để chỉ báo trạng thái truyền phát đang hoạt động.
-
-### Giao diện bên nhận (Receiver)
-![Ảnh chụp màn hình 1](./screenshots/screen1.png)
-*Hình 1: Dashboard của bên nhận hiển thị trạng thái kết nối và thông tin Wi-Fi Direct.*
-
-### Giao diện bên gửi (Sender)
-![Ảnh chụp màn hình 2](./screenshots/screen2.png)
-*Hình 2: Ứng dụng bên gửi với nút điều khiển "Bắt đầu truyền" một chạm và chọn thiết bị.*
-
-## 8. Bảo mật & Hiệu suất
+## 7. Bảo mật & Hiệu suất
 - **Xác thực:** Kết nối P2P được bảo mật thông qua mã hóa WPA2-PSK của Wi-Fi Direct.
 - **Bảo vệ dữ liệu:** Các luồng WebRTC được mã hóa đầu cuối bằng DTLS-SRTP.
 - **Tối ưu hóa hiệu suất:**
@@ -68,12 +57,12 @@ Giao diện được thiết kế theo triết lý "Kết nối một chạm", t
     - **Bitrate thích ứng:** Tự động điều chỉnh chất lượng video dựa trên băng thông mạng để tránh giật lag.
     - **Quản lý Jitter Buffer:** Các bộ đệm khử nhiễu âm thanh tùy chỉnh để duy trì âm thanh được đồng bộ hoàn hảo.
 
-## 9. Thành tựu
+## 8. Thành tựu
 - **Độ trễ:** Đạt được độ trễ dưới 150ms trên các thiết bị tiêu dùng thông thường.
 - **Độ ổn định:** Duy trì truyền phát 60fps trong hơn 4 giờ liên tục mà không bị quá nhiệt.
 - **Phản hồi người dùng:** Người dùng thử nghiệm đánh giá cao sự dễ dàng kết nối qua Wi-Fi Direct so với Miracast/Chromecast truyền thống.
 
-## 10. Lộ trình phát triển
+## 9. Lộ trình phát triển
 - **Tính năng dự kiến:**
     - **Điều khiển từ xa (HID):** Cho phép bên nhận điều khiển thiết bị gửi (chạm/bàn phím/chuột).
     - **Hỗ trợ nhiều nguồn gửi:** Xem chia màn hình cho nhiều thiết bị truyền cùng lúc.

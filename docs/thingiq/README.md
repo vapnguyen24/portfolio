@@ -64,21 +64,7 @@ ThingIQ follows a **Feature-based MVVM (Model-View-ViewModel)** architecture, en
 
 ---
 
-## 7. UI & Screenshots
-The interface utilizes a custom design system built on **Shopify Restyle**, focusing on industrial reliability and high information density.
-
-![Login & Auth](./screenshots/login.png)
-*Figure 1: Secure authentication with OTP verification.*
-
-![Device Dashboard](./screenshots/home.png)
-*Figure 2: Comprehensive fleet status and real-time monitoring.*
-
-![Dark Mode Experience](./screenshots/dark.png)
-*Figure 3: Optimized dark theme for low-light environment usage.*
-
----
-
-## 8. Security & Performance
+## 7. Security & Performance
 *   **Secure Authentication:** Multi-factor authentication support with OTP and Firebase-backed identity management.
 *   **Data Integrity:** HTTPS/TLS 1.3 encryption for all API traffic and secure storage for sensitive credentials via MMKV.
 *   **Performance Optimization:** 
@@ -88,7 +74,7 @@ The interface utilizes a custom design system built on **Shopify Restyle**, focu
 
 ---
 
-## 9. Achievements
+## 8. Achievements
 *   **Enterprise Stability:** Successfully managing fleet versions across diverse Android and iOS hardware profiles.
 *   **High Availability:** Reliable real-time alerting system with <1s notification delivery latency.
 *   **Multi-tenancy:** Robust support for multi-company hierarchical structures within a single application instance.
@@ -96,7 +82,7 @@ The interface utilizes a custom design system built on **Shopify Restyle**, focu
 
 ---
 
-## 10. Future Roadmap
+## 9. Future Roadmap
 *   **Onboarding Enhancements:** Native step-by-step device provisioning wizard.
 *   **Enhanced Analytics:** Predictive maintenance reports based on historical sensor data.
 *   **Payment Integration:** In-app subscription management for premium fleet monitoring features.
