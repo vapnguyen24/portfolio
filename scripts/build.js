@@ -24,7 +24,7 @@ async function build() {
     fs.copySync(path.join(rootDir, 'index.html'), path.join(distDir, 'index.html'));
 
     // Copy CV if it exists in root (check if it's referenced in index.html)
-    // In index.html line 147: href="assets/cv.pdf" - so it's already in assets.
+    // In index.html line 147: href="assets/cv.Nguyen_Thanh_Vinh_Mobile_Developer_CV.pdf" - so it's already in assets.
 
     // 3. Build CSS with Tailwind
     console.log('🎨 Building CSS...');
