@@ -1,0 +1,43 @@
+# robots.txt – Vinh Nguyen Portfolio
+# https://vapnguyen24.github.io/portfolio/
+#
+# NOTE: GitHub Pages serves robots.txt from the root domain
+# (https://vapnguyen24.github.io/robots.txt), not the /portfolio/ subpath.
+# For full control, consider using a custom domain or GitHub User/Org Pages
+# (root repo: vapnguyen24.github.io) so this file is served correctly.
+# Until then, this file is a declaration of intent and may not be served.
+
+# ─── Allow all crawlers ─────────────────────────────────────────────────────
+User-agent: *
+Allow: /
+
+# ─── Block access to source/build files that shouldn't be indexed ───────────
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /.git/
+Disallow: /docs/
+
+# ─── Allow AI crawlers (Perplexity, Bing AI, ChatGPT, Gemini) ───────────────
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ─── Sitemap ─────────────────────────────────────────────────────────────────
+Sitemap: https://vapnguyen24.github.io/portfolio/sitemap.xml
