@@ -4,46 +4,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Vinh Nguyen</title>
-    <meta name="description" content="Professional portfolio of a Mobile App Developer.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <!-- ═══════════════════════════════════════════════════════
+         PRIMARY META TAGS
+    ═══════════════════════════════════════════════════════ -->
+    <title>Vinh Nguyen | Mobile App Developer – Flutter &amp; React Native</title>
+    <meta name="description" content="Vinh Nguyen (vapnguyen24) is a Mobile App Developer from Vietnam with 3+ years building Flutter &amp; React Native apps — IoT, FinTech, Web3 &amp; EdTech. Available for freelance.">
+    <meta name="author" content="Vinh Nguyen">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="keywords" content="Vinh Nguyen, vapnguyen24, mobile app developer Vietnam, Flutter developer, React Native developer, Android developer, iOS developer, cross-platform developer, mobile portfolio">
+    <link rel="canonical" href="https://vapnguyen24.github.io/portfolio/">
+
+    <!-- ═══════════════════════════════════════════════════════
+         OPEN GRAPH / FACEBOOK / SOCIAL SHARING
+    ═══════════════════════════════════════════════════════ -->
+    <meta property="og:type" content="profile">
     <meta property="og:url" content="https://vapnguyen24.github.io/portfolio/">
-    <meta property="og:title" content="Portfolio | Vinh Nguyen">
-    <meta property="og:description" content="Professional portfolio of a Mobile App Developer.">
+    <meta property="og:title" content="Vinh Nguyen | Mobile App Developer – Flutter &amp; React Native">
+    <meta property="og:description" content="Mobile App Developer from Vietnam with 3+ years experience in Flutter, React Native &amp; Android. 10+ projects across IoT, FinTech, Web3 &amp; EdTech.">
     <meta property="og:image" content="https://vapnguyen24.github.io/portfolio/assets/images/thumbnail_v2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Vinh Nguyen – Mobile App Developer Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="vi_VN">
+    <meta property="og:site_name" content="Vinh Nguyen Portfolio">
+    <meta property="profile:first_name" content="Vinh">
+    <meta property="profile:last_name" content="Nguyen">
+    <meta property="profile:username" content="vapnguyen24">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://vapnguyen24.github.io/portfolio/">
-    <meta property="twitter:title" content="Portfolio | Vinh Nguyen">
-    <meta property="twitter:description" content="Professional portfolio of a Mobile App Developer.">
-    <meta property="twitter:image" content="https://vapnguyen24.github.io/portfolio/assets/images/thumbnail_v2.png">
+    <!-- ═══════════════════════════════════════════════════════
+         TWITTER / X CARD
+    ═══════════════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://vapnguyen24.github.io/portfolio/">
+    <meta name="twitter:title" content="Vinh Nguyen | Mobile App Developer – Flutter &amp; React Native">
+    <meta name="twitter:description" content="Mobile App Developer from Vietnam. 3+ years, 10+ projects in Flutter, React Native, IoT &amp; Web3. Open for freelance.">
+    <meta name="twitter:image" content="https://vapnguyen24.github.io/portfolio/assets/images/thumbnail_v2.png">
+    <meta name="twitter:image:alt" content="Vinh Nguyen – Mobile App Developer Portfolio">
+    <meta name="twitter:creator" content="@vapnguyen24">
+    <meta name="twitter:site" content="@vapnguyen24">
 
+    <!-- ═══════════════════════════════════════════════════════
+         FAVICON & TOUCH ICONS
+    ═══════════════════════════════════════════════════════ -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230284c7' /%3E%3Ctext x='50' y='50' font-family='Arial, sans-serif' font-weight='bold' font-size='50' fill='white' text-anchor='middle' dy='.35em'%3EVN%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="./assets/images/avatar.jpg">
 
-    <!-- Google Fonts -->
+    <!-- ═══════════════════════════════════════════════════════
+         HREFLANG – BILINGUAL SITE (EN + VI)
+    ═══════════════════════════════════════════════════════ -->
+    <link rel="alternate" hreflang="en" href="https://vapnguyen24.github.io/portfolio/">
+    <link rel="alternate" hreflang="vi" href="https://vapnguyen24.github.io/portfolio/?lang=vi">
+    <link rel="alternate" hreflang="x-default" href="https://vapnguyen24.github.io/portfolio/">
+
+    <!-- ═══════════════════════════════════════════════════════
+         PERFORMANCE: PRECONNECT & DNS-PREFETCH
+    ═══════════════════════════════════════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <!-- LCP hero image preload – NEVER lazy-load above-the-fold images -->
+    <link rel="preload" as="image" href="./assets/images/avatar.jpg" fetchpriority="high">
+
+    <!-- ═══════════════════════════════════════════════════════
+         FONTS – 3 requests merged into 1 (saves ~200ms RTT)
+    ═══════════════════════════════════════════════════════ -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Outfit:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ═══════════════════════════════════════════════════════
+         ICONS
+    ═══════════════════════════════════════════════════════ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!-- Custom CSS -->
+    <!-- ═══════════════════════════════════════════════════════
+         CUSTOM CSS
+    ═══════════════════════════════════════════════════════ -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Preload -->
-    <link rel="preload" as="image" href="./assets/images/avatar.jpg">
+    <!-- ═══════════════════════════════════════════════════════
+         JSON-LD STRUCTURED DATA – Person + WebSite + ProfilePage + BreadcrumbList
+    ═══════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://vapnguyen24.github.io/portfolio/#person",
+          "name": "Vinh Nguyen",
+          "alternateName": ["vapnguyen24", "Nguyen Thanh Vinh"],
+          "description": "Mobile App Developer with 3+ years of experience specializing in Flutter and React Native. Based in Vietnam, building cross-platform iOS, Android, and embedded applications for IoT, FinTech, Web3, and Education sectors.",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://vapnguyen24.github.io/portfolio/assets/images/avatar.jpg",
+            "width": 320,
+            "height": 320,
+            "caption": "Vinh Nguyen – Mobile App Developer"
+          },
+          "url": "https://vapnguyen24.github.io/portfolio/",
+          "email": "vinhnt.work@gmail.com",
+          "jobTitle": "Mobile App Developer",
+          "knowsAbout": [
+            "Flutter", "Dart", "React Native", "Android", "Kotlin",
+            "JavaScript", "TypeScript", "Firebase", "WebRTC", "IoT",
+            "Web3", "Blockchain", "NFT", "FinTech", "Mobile Development",
+            "Cross-platform Development", "UI/UX Design"
+          ],
+          "nationality": {
+            "@type": "Country",
+            "name": "Vietnam"
+          },
+          "sameAs": [
+            "https://github.com/vapnguyen24",
+            "https://www.linkedin.com/in/vinh-nguyen-05b513262/"
+          ],
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Mobile App Developer",
+            "occupationLocation": {
+              "@type": "Country",
+              "name": "Vietnam"
+            },
+            "skills": "Flutter, React Native, Android Native, Kotlin, JavaScript, TypeScript, Firebase, WebRTC, IoT Integration, Blockchain, Web3"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://vapnguyen24.github.io/portfolio/#website",
+          "url": "https://vapnguyen24.github.io/portfolio/",
+          "name": "Vinh Nguyen | Mobile App Developer Portfolio",
+          "description": "Portfolio of Vinh Nguyen – Mobile App Developer specializing in Flutter, React Native, and Android development.",
+          "author": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+          "inLanguage": ["en-US", "vi-VN"]
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://vapnguyen24.github.io/portfolio/#profilepage",
+          "url": "https://vapnguyen24.github.io/portfolio/",
+          "name": "Vinh Nguyen – Mobile App Developer Portfolio",
+          "description": "Professional portfolio of Vinh Nguyen, Mobile App Developer from Vietnam specializing in Flutter and React Native.",
+          "about": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+          "mainEntity": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+          "inLanguage": ["en-US", "vi-VN"]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home",     "item": "https://vapnguyen24.github.io/portfolio/" },
+            { "@type": "ListItem", "position": 2, "name": "About",    "item": "https://vapnguyen24.github.io/portfolio/#about" },
+            { "@type": "ListItem", "position": 3, "name": "Skills",   "item": "https://vapnguyen24.github.io/portfolio/#skills" },
+            { "@type": "ListItem", "position": 4, "name": "Projects", "item": "https://vapnguyen24.github.io/portfolio/#projects" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════════════
+         JSON-LD STRUCTURED DATA – SoftwareApplication ItemList (Projects)
+    ═══════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Vinh Nguyen – Featured Mobile App Projects",
+      "description": "A portfolio of cross-platform mobile applications developed by Vinh Nguyen using Flutter, React Native, and Android Native.",
+      "author": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem", "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://vapnguyen24.github.io/portfolio/#project-screencast",
+            "name": "ScreenCast",
+            "description": "Real-time screen casting application using WebRTC and Wi-Fi Direct for low-latency device-to-device screen sharing with audio transmission and remote control support.",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Android",
+            "programmingLanguage": ["Flutter", "Kotlin", "WebRTC", "WebSocket"],
+            "creator": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+            "image": "https://vapnguyen24.github.io/portfolio/assets/images/casting/img1.png"
+          }
+        },
+        {
+          "@type": "ListItem", "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://vapnguyen24.github.io/portfolio/#project-nft",
+            "name": "NFT Marketplace",
+            "description": "Decentralized NFT marketplace with smart contract integration for minting, trading, and auctioning digital assets. Features MetaMask wallet connectivity and real-time price tracking.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": ["Android", "iOS"],
+            "programmingLanguage": ["Flutter", "Dart", "Web3", "MetaMask"],
+            "creator": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+            "image": "https://vapnguyen24.github.io/portfolio/assets/images/nft/img1.png"
+          }
+        },
+        {
+          "@type": "ListItem", "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://vapnguyen24.github.io/portfolio/#project-thingiq",
+            "name": "ThingIQ",
+            "description": "IoT management platform for real-time monitoring and control of connected devices. Features sensor dashboards, live device tracking with geofencing, and rule-based alert systems.",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": ["Android", "iOS"],
+            "programmingLanguage": ["React Native", "JavaScript", "SocketIO", "ECharts"],
+            "creator": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+            "image": "https://vapnguyen24.github.io/portfolio/assets/images/thingiq/img1.png"
+          }
+        },
+        {
+          "@type": "ListItem", "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://vapnguyen24.github.io/portfolio/#project-finself",
+            "name": "Finself",
+            "description": "Personal finance app for tracking daily income and expenses, categorizing transactions, setting saving goals, and visualizing spending habits with multi-currency support.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": ["Android", "iOS"],
+            "programmingLanguage": ["Flutter", "Dart", "Riverpod"],
+            "creator": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+            "image": "https://vapnguyen24.github.io/portfolio/assets/images/finself/img1.png"
+          }
+        },
+        {
+          "@type": "ListItem", "position": 5,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://vapnguyen24.github.io/portfolio/#project-magichands",
+            "name": "MagicHands",
+            "description": "On-demand home service booking platform connecting users with professional domestic workers. Features real-time job tracking, QR code payments, and digital wallet integration.",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": ["Android", "iOS"],
+            "programmingLanguage": ["React Native", "JavaScript", "Redux", "Firebase"],
+            "creator": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+            "image": "https://vapnguyen24.github.io/portfolio/assets/images/magichands/img1.png"
+          }
+        },
+        {
+          "@type": "ListItem", "position": 6,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://vapnguyen24.github.io/portfolio/#project-myfpl",
+            "name": "MyFPL",
+            "description": "Student services app for FPT Education with AI-powered face detection attendance, academic dashboard for grades and schedules, tuition payment integration, and real-time campus notifications.",
+            "applicationCategory": "EducationApplication",
+            "operatingSystem": ["Android", "iOS"],
+            "programmingLanguage": ["React Native", "JavaScript", "Redux Saga"],
+            "creator": { "@id": "https://vapnguyen24.github.io/portfolio/#person" },
+            "image": "https://vapnguyen24.github.io/portfolio/assets/images/myfpl/img1.png"
+          }
+        }
+      ]
+    }
+    </script>
 
     <style>
         /* Markdown Styles */
@@ -195,12 +416,12 @@
     class="bg-gray-50 text-gray-900 dark:bg-dark-bg dark:text-dark-text transition-colors duration-300 font-sans selection:bg-primary-500 selection:text-white">
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 transition-all duration-300 glass" id="navbar">
+    <nav class="fixed w-full z-50 transition-all duration-300 glass" id="navbar" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="font-heading text-2xl font-bold tracking-tight">
+                    <a href="#" class="font-heading text-2xl font-bold tracking-tight" aria-label="Vinh Nguyen – Home">
                         Dev<span class="text-primary-500">Portfolio</span>
                     </a>
                 </div>
@@ -219,15 +440,15 @@
                     <!-- Theme Toggle -->
                     <button id="theme-toggle"
                         class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-xl"
-                        aria-label="Toggle Theme">
-                        <i class="fas fa-moon dark:hidden"></i>
-                        <i class="fas fa-sun hidden dark:inline-block text-yellow-400"></i>
+                        aria-label="Toggle dark/light theme">
+                        <i class="fas fa-moon dark:hidden" aria-hidden="true"></i>
+                        <i class="fas fa-sun hidden dark:inline-block text-yellow-400" aria-hidden="true"></i>
                     </button>
 
                     <!-- Language Switch -->
                     <button id="lang-toggle"
                         class="p-2 w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors font-bold text-sm"
-                        aria-label="Switch Language">
+                        aria-label="Switch language to Vietnamese">
                         VI
                     </button>
                 </div>
@@ -235,17 +456,20 @@
                 <!-- Mobile Menu Button -->
                 <div class="flex items-center md:hidden space-x-4">
                     <button id="theme-toggle-mobile"
-                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-lg">
-                        <i class="fas fa-moon dark:hidden"></i>
-                        <i class="fas fa-sun hidden dark:inline-block text-yellow-400"></i>
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-lg"
+                        aria-label="Toggle dark/light theme">
+                        <i class="fas fa-moon dark:hidden" aria-hidden="true"></i>
+                        <i class="fas fa-sun hidden dark:inline-block text-yellow-400" aria-hidden="true"></i>
                     </button>
                     <button id="lang-toggle-mobile"
-                        class="p-2 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors font-bold text-xs">
+                        class="p-2 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors font-bold text-xs"
+                        aria-label="Switch language to Vietnamese">
                         VI
                     </button>
                     <button id="mobile-menu-btn"
-                        class="p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
+                        class="p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
+                        aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <i class="fas fa-bars text-xl" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
@@ -267,192 +491,229 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-        <!-- Animated Background Blobs -->
-        <div
-            class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob dark:bg-purple-900 dark:opacity-30">
-        </div>
-        <div
-            class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 dark:bg-yellow-900 dark:opacity-30">
-        </div>
-        <div
-            class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 dark:bg-pink-900 dark:opacity-30">
-        </div>
+    <main id="main-content">
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <!-- Text Content -->
-                <div class="text-center md:text-left order-2 md:order-1">
-                    <h2 class="text-primary-600 dark:text-primary-400 font-semibold tracking-wide uppercase text-sm mb-2 animate-fade-in-up"
-                        data-i18n="hero_welcome">Hello, I'm</h2>
-                    <h1 class="text-4xl md:text-6xl font-heading font-bold mb-4 animate-fade-in-up"
-                        style="animation-delay: 0.1s">
-                        <span class="text-gradient">Vinh Nguyen</span>
-                    </h1>
-                    <h3 class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 animate-fade-in-up"
-                        style="animation-delay: 0.2s" data-i18n="hero_role">
-                        Mobile App Developer
-                    </h3>
-                    <p class="text-gray-500 dark:text-gray-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed animate-fade-in-up"
-                        style="animation-delay: 0.3s" data-i18n="hero_desc">
-                        I craft high-performance websites and applications with modern technologies. Focusing on user
-                        experience, clean code, and elegant design.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up"
-                        style="animation-delay: 0.4s">
-                        <a href="#projects"
-                            class="px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-medium transition-transform transform hover:-translate-y-1 shadow-lg shadow-primary-500/30"
-                            data-i18n="btn_view_work">
-                            View My Work
-                        </a>
-                        <a href="assets/Nguyen_Thanh_Vinh_Mobile_Developer_CV.pdf" target="_blank" rel="noopener noreferrer"
-                            class="px-8 py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white rounded-full font-medium transition-transform transform hover:-translate-y-1 shadow-lg"
-                            data-i18n="btn_download_cv">
-                            Download CV
-                        </a>
-                    </div>
-                </div>
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+            aria-label="Introduction – Vinh Nguyen, Mobile App Developer">
+            <!-- Animated Background Blobs (decorative) -->
+            <div aria-hidden="true"
+                class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob dark:bg-purple-900 dark:opacity-30">
+            </div>
+            <div aria-hidden="true"
+                class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 dark:bg-yellow-900 dark:opacity-30">
+            </div>
+            <div aria-hidden="true"
+                class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 dark:bg-pink-900 dark:opacity-30">
+            </div>
 
-                <!-- Image/Avatar -->
-                <div class="order-1 md:order-2 flex justify-center animate-fade-in-up" style="animation-delay: 0.2s">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80">
-                        <div
-                            class="absolute inset-0 bg-primary-100 dark:bg-primary-900 rounded-full animate-pulse filter blur-2xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Text Content -->
+                    <div class="text-center md:text-left order-2 md:order-1">
+                        <!-- FIX: was <h2> which broke heading hierarchy; "Hello I'm" is not a heading -->
+                        <p class="text-primary-600 dark:text-primary-400 font-semibold tracking-wide uppercase text-sm mb-2 animate-fade-in-up"
+                            data-i18n="hero_welcome">Hello, I'm</p>
+                        <h1 class="text-4xl md:text-6xl font-heading font-bold mb-4 animate-fade-in-up"
+                            style="animation-delay: 0.1s">
+                            <span class="text-gradient">Vinh Nguyen</span>
+                        </h1>
+                        <!-- FIX: was <h3>, now <h2> — direct subheading after h1 -->
+                        <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 animate-fade-in-up font-semibold"
+                            style="animation-delay: 0.2s" data-i18n="hero_role">
+                            Mobile App Developer
+                        </h2>
+                        <p class="text-gray-500 dark:text-gray-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed animate-fade-in-up"
+                            style="animation-delay: 0.3s" data-i18n="hero_desc">
+                            I craft high-performance websites and applications with modern technologies. Focusing on user
+                            experience, clean code, and elegant design.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up"
+                            style="animation-delay: 0.4s">
+                            <a href="#projects"
+                                class="px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-medium transition-transform transform hover:-translate-y-1 shadow-lg shadow-primary-500/30"
+                                data-i18n="btn_view_work">
+                                View My Work
+                            </a>
+                            <a href="assets/Nguyen_Thanh_Vinh_Mobile_Developer_CV.pdf" target="_blank"
+                                rel="noopener noreferrer"
+                                class="px-8 py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white rounded-full font-medium transition-transform transform hover:-translate-y-1 shadow-lg"
+                                data-i18n="btn_download_cv">
+                                Download CV
+                            </a>
                         </div>
-                        <img src="./assets/images/avatar.jpg" alt="Profile" loading="lazy" width="320" height="320"
-                            class="rounded-full w-full h-full object-cover border-4 border-white dark:border-gray-800 shadow-2xl relative z-10 transform hover:scale-105 transition-transform duration-500">
-                        <!-- Floating Badge -->
-                        <div
-                            class="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg z-20 flex items-center gap-2 animate-bounce">
-                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                            <span class="text-xs font-semibold" data-i18n="status_available">Available for work</span>
+                    </div>
+
+                    <!-- Avatar Image -->
+                    <div class="order-1 md:order-2 flex justify-center animate-fade-in-up" style="animation-delay: 0.2s">
+                        <div class="relative w-64 h-64 md:w-80 md:h-80">
+                            <div aria-hidden="true"
+                                class="absolute inset-0 bg-primary-100 dark:bg-primary-900 rounded-full animate-pulse filter blur-2xl">
+                            </div>
+                            <!-- FIX: removed loading="lazy" (LCP element must NOT be lazy); added fetchpriority + descriptive alt -->
+                            <img src="./assets/images/avatar.jpg"
+                                alt="Vinh Nguyen – Mobile App Developer based in Vietnam"
+                                width="320" height="320"
+                                fetchpriority="high"
+                                decoding="async"
+                                class="rounded-full w-full h-full object-cover border-4 border-white dark:border-gray-800 shadow-2xl relative z-10 transform hover:scale-105 transition-transform duration-500">
+                            <!-- Floating Badge -->
+                            <div aria-label="Currently available for work"
+                                class="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg z-20 flex items-center gap-2 animate-bounce">
+                                <div class="w-3 h-3 bg-green-500 rounded-full" aria-hidden="true"></div>
+                                <span class="text-xs font-semibold" data-i18n="status_available">Available for work</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Scroll Indicator -->
-        <div
-            class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce items-center justify-center">
-            <a href="#about" class="text-gray-400 hover:text-primary-500 transition-colors">
-                <i class="fas fa-chevron-down text-2xl"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white dark:bg-dark-bg transition-colors">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4" data-i18n="about_title">About Me</h2>
-                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
+            <!-- Scroll Indicator -->
+            <div aria-hidden="true"
+                class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce items-center justify-center">
+                <a href="#about" class="text-gray-400 hover:text-primary-500 transition-colors" tabindex="-1">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
             </div>
+        </section>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="glass p-8 rounded-2xl md:col-span-2 reveal shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="text-2xl font-bold mb-4 text-primary-600 dark:text-primary-400"
-                        data-i18n="about_subtitle">Who Am I?</h3>
-                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6" data-i18n="about_text">
-                        I am a passionate Full Stack Developer based in Vietnam with a knack for building beautiful,
-                        functional, and user-friendly websites. My journey in web development began 5 years ago, and
-                        I've since worked on a diverse range of projects from small business landing pages to complex
-                        web applications.
-                        <br><br>
-                        I believe in the power of clean code and modern design principles. When I'm not coding, you can
-                        find me exploring new technologies, playing video games, or enjoying a good cup of coffee.
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
-                            <div class="text-3xl font-bold text-primary-500 mb-1">3+</div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider"
-                                data-i18n="stat_years">Years Exp.</div>
-                        </div>
-                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
-                            <div class="text-3xl font-bold text-primary-500 mb-1">10+</div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider"
-                                data-i18n="stat_projects">Projects</div>
-                        </div>
-                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
-                            <div class="text-3xl font-bold text-primary-500 mb-1">10+</div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider"
-                                data-i18n="stat_tech">Technologies</div>
-                        </div>
-                    </div>
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white dark:bg-dark-bg transition-colors"
+            aria-labelledby="about-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 id="about-heading" class="text-3xl md:text-4xl font-heading font-bold mb-4"
+                        data-i18n="about_title">About Me</h2>
+                    <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full" aria-hidden="true"></div>
                 </div>
 
-                <!-- Connect Card -->
-                <div
-                    class="glass p-6 rounded-2xl flex flex-col justify-center items-center text-center reveal shadow-sm hover:shadow-md transition-shadow delay-100">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Bio Card -->
+                    <div class="glass p-8 rounded-2xl md:col-span-2 reveal shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-2xl font-bold mb-4 text-primary-600 dark:text-primary-400"
+                            data-i18n="about_subtitle">Who Am I?</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6" data-i18n="about_text">
+                            I am a passionate Full Stack Developer based in Vietnam with a knack for building beautiful,
+                            functional, and user-friendly websites. My journey in web development began 5 years ago, and
+                            I've since worked on a diverse range of projects from small business landing pages to complex
+                            web applications.
+                            <br><br>
+                            I believe in the power of clean code and modern design principles. When I'm not coding, you can
+                            find me exploring new technologies, playing video games, or enjoying a good cup of coffee.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
+                                <div class="text-3xl font-bold text-primary-500 mb-1">3+</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider"
+                                    data-i18n="stat_years">Years Exp.</div>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
+                                <div class="text-3xl font-bold text-primary-500 mb-1">10+</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider"
+                                    data-i18n="stat_projects">Projects</div>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
+                                <div class="text-3xl font-bold text-primary-500 mb-1">10+</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider"
+                                    data-i18n="stat_tech">Technologies</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Connect Card -->
                     <div
-                        class="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mb-6 text-primary-600 dark:text-primary-400 text-2xl">
-                        <i class="fas fa-paper-plane"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2" data-i18n="connect_title">Let's Connect</h4>
-                    <p class="text-gray-500 dark:text-gray-400 mb-6 text-sm" data-i18n="connect_desc">
-                        Open for freelance opportunities and collaborations.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/vapnguyen24" target="_blank"
-                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/vinh-nguyen-05b513262/" target="_blank"
-                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:vinhnt.work@gmail.com"
-                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-red-500 hover:text-white transition-colors">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <!-- <a href="#"
-                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-400 hover:text-white transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-red-500 hover:text-white transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a> -->
+                        class="glass p-6 rounded-2xl flex flex-col justify-center items-center text-center reveal shadow-sm hover:shadow-md transition-shadow delay-100">
+                        <div aria-hidden="true"
+                            class="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mb-6 text-primary-600 dark:text-primary-400 text-2xl">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <!-- FIX: was <h4> — should be <h3> inside an <h2> section -->
+                        <h3 class="text-xl font-bold mb-2" data-i18n="connect_title">Let's Connect</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mb-6 text-sm" data-i18n="connect_desc">
+                            Open for freelance opportunities and collaborations.
+                        </p>
+                        <div class="flex space-x-4" role="list" aria-label="Social media links">
+                            <a href="https://github.com/vapnguyen24" target="_blank" rel="noopener noreferrer"
+                                aria-label="Vinh Nguyen on GitHub" role="listitem"
+                                class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vinh-nguyen-05b513262/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Vinh Nguyen on LinkedIn" role="listitem"
+                                class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:vinhnt.work@gmail.com"
+                                aria-label="Send email to Vinh Nguyen" role="listitem"
+                                class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-red-500 hover:text-white transition-colors">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4" data-i18n="skills_title">Technical Skills
-                </h2>
-                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
-            </div>
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors"
+            aria-labelledby="skills-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 id="skills-heading" class="text-3xl md:text-4xl font-heading font-bold mb-4"
+                        data-i18n="skills_title">Technical Skills</h2>
+                    <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full" aria-hidden="true"></div>
+                </div>
 
-            <div id="skills-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                <!-- Skills injected via JS -->
-            </div>
-        </div>
-    </section>
+                <div id="skills-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6"
+                    role="list" aria-label="Technical skills list">
+                    <!-- Skills injected via JS; static fallback below for crawlers -->
+                </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white dark:bg-dark-bg transition-colors">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4" data-i18n="projects_title">Featured
-                    Projects</h2>
-                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
+                <!-- Static SEO fallback: visible only when JS hasn't rendered yet -->
+                <noscript>
+                    <ul class="flex flex-wrap gap-3 justify-center mt-4" aria-label="Technical skills">
+                        <li>React</li><li>React Native</li><li>Flutter</li>
+                        <li>Android</li><li>Kotlin</li><li>JavaScript</li>
+                        <li>TypeScript</li><li>Figma</li><li>GitHub</li><li>GitLab</li>
+                    </ul>
+                </noscript>
             </div>
+        </section>
 
-            <div id="projects-list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projects injected via JS -->
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white dark:bg-dark-bg transition-colors"
+            aria-labelledby="projects-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 id="projects-heading" class="text-3xl md:text-4xl font-heading font-bold mb-4"
+                        data-i18n="projects_title">Featured Projects</h2>
+                    <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full" aria-hidden="true"></div>
+                </div>
+
+                <div id="projects-list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    role="list" aria-label="Portfolio projects">
+                    <!-- Projects injected via JS; static fallback below for crawlers -->
+                </div>
+
+                <!-- Static SEO fallback for crawlers that don't execute JS -->
+                <noscript>
+                    <ul>
+                        <li><strong>ScreenCast</strong> – Flutter, WebRTC, Wi-Fi Direct. Real-time screen casting app for Android with audio and remote control.</li>
+                        <li><strong>NFT Marketplace</strong> – Flutter, Web3, MetaMask. Decentralized NFT minting, trading, and auction platform.</li>
+                        <li><strong>ThingIQ</strong> – React Native, SocketIO, ECharts. IoT monitoring platform with live device tracking and rule-based alerts.</li>
+                        <li><strong>Finself</strong> – Flutter, Riverpod. Personal finance app with multi-currency support, budgets, and analytics.</li>
+                        <li><strong>MagicHands</strong> – React Native, Redux, Firebase. On-demand home service booking with QR payments and live tracking.</li>
+                        <li><strong>MyFPL</strong> – React Native, Redux Saga. Student app for FPT Education with AI attendance and grade tracking.</li>
+                    </ul>
+                </noscript>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main><!-- /#main-content -->
 
     <!-- Footer -->
-    <footer class="bg-white dark:bg-dark-card border-t border-gray-200 dark:border-gray-800 py-8 transition-colors">
+    <footer class="bg-white dark:bg-dark-card border-t border-gray-200 dark:border-gray-800 py-8 transition-colors"
+        aria-label="Site footer">
         <div
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="text-sm text-gray-500 dark:text-gray-400">
@@ -460,8 +721,9 @@
             </div>
 
             <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                aria-label="Back to top"
                 class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-500 hover:bg-primary-500 hover:text-white transition-colors">
-                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
             </button>
         </div>
     </footer>
@@ -469,7 +731,7 @@
     <!-- Project Modal Backdrop -->
     <div id="modal-backdrop"
         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4"
-        onclick="closeModal()">
+        onclick="closeModal()" role="dialog" aria-modal="true" aria-labelledby="modal-title">
 
         <!-- Modal Content -->
         <div id="modal-content"
@@ -477,34 +739,34 @@
             onclick="event.stopPropagation()">
 
             <!-- Close Button -->
-            <button onclick="closeModal()"
+            <button onclick="closeModal()" aria-label="Close project details"
                 class="absolute top-4 right-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors">
-                <i class="fas fa-times"></i>
+                <i class="fas fa-times" aria-hidden="true"></i>
             </button>
 
             <!-- Image Side -->
             <div id="modal-slider-side"
                 class="w-full md:w-2/5 h-64 md:h-auto bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
-                <img id="modal-img" src="" alt="Project Preview"
+                <img id="modal-img" src="" alt="Project screenshot preview"
                     class="absolute inset-0 w-full h-full object-cover transition-all duration-500">
 
                 <!-- Slider Arrows -->
                 <button id="prev-slide"
                     class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                    onclick="changeSlide(-1)">
-                    <i class="fas fa-chevron-left"></i>
+                    aria-label="Previous screenshot" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
                 </button>
                 <button id="next-slide"
                     class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                    onclick="changeSlide(1)">
-                    <i class="fas fa-chevron-right"></i>
+                    aria-label="Next screenshot" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
                 </button>
 
                 <!-- Zoom Icon -->
                 <button id="zoom-btn"
                     class="absolute bottom-2 right-2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
-                    onclick="openZoomModal()">
-                    <i class="fas fa-expand"></i>
+                    aria-label="View full-screen image" onclick="openZoomModal()">
+                    <i class="fas fa-expand" aria-hidden="true"></i>
                 </button>
             </div>
 
@@ -531,7 +793,7 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" style="gap: 1rem;">
                                 <div class="flex items-start" style="gap: 1rem;">
                                     <span class="material-symbols-outlined text-gray-400 shrink-0"
-                                        style="flex-shrink: 0;">category</span>
+                                        style="flex-shrink: 0;" aria-hidden="true">category</span>
                                     <div>
                                         <p class="text-xs text-gray-400 font-medium" data-i18n="modal_project_type">
                                             Project Type</p>
@@ -541,7 +803,7 @@
                                 </div>
                                 <div class="flex items-start" style="gap: 1rem;">
                                     <span class="material-symbols-outlined text-gray-400 shrink-0"
-                                        style="flex-shrink: 0;">corporate_fare</span>
+                                        style="flex-shrink: 0;" aria-hidden="true">corporate_fare</span>
                                     <div>
                                         <p class="text-xs text-gray-400 font-medium" data-i18n="modal_company">Company
                                         </p>
@@ -556,7 +818,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-900 dark:text-gray-200 mb-3"
                                 data-i18n="modal_role_achievements">
-                                My Role & Key Achievements
+                                My Role &amp; Key Achievements
                             </h3>
                             <div id="modal-project-role-container">
                                 <!-- Roles will be injected here via JS -->
@@ -574,13 +836,14 @@
 
                 <div id="detail-view" class="hidden flex flex-col flex-1 min-h-0 p-8 md:p-10">
                     <button onclick="toggleDetailView(false)"
-                        class="mb-4 text-primary-600 dark:text-primary-400 text-sm font-medium flex items-center gap-2 hover:underline">
-                        <i class="fas fa-arrow-left"></i> <span data-i18n="modal_back">Back to Summary</span>
+                        class="mb-4 text-primary-600 dark:text-primary-400 text-sm font-medium flex items-center gap-2 hover:underline"
+                        aria-label="Back to project summary">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> <span data-i18n="modal_back">Back to Summary</span>
                     </button>
                     <div id="readme-content" class="markdown-body overflow-y-auto pr-2 custom-scrollbar" style="max-height: calc(90vh - 120px)">
                         <!-- README content injected via JS -->
                         <div class="flex flex-col items-center justify-center py-12 text-gray-400">
-                            <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
+                            <i class="fas fa-spinner fa-spin text-2xl mb-2" aria-hidden="true"></i>
                             <span data-i18n="modal_loading">Loading details...</span>
                         </div>
                     </div>
@@ -590,44 +853,45 @@
     </div>
 
     <!-- Full Screen Zoom Modal -->
-    <div id="zoom-modal" class="fixed inset-0 bg-black/95 z-[60] hidden flex items-center justify-center">
+    <div id="zoom-modal" class="fixed inset-0 bg-black/95 z-[60] hidden flex items-center justify-center"
+        role="dialog" aria-modal="true" aria-label="Full-screen image viewer">
         <!-- Close Button -->
-        <button onclick="closeZoomModal()"
+        <button onclick="closeZoomModal()" aria-label="Close full-screen view"
             class="absolute top-4 right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/30 transition-colors">
-            <i class="fas fa-times text-xl"></i>
+            <i class="fas fa-times text-xl" aria-hidden="true"></i>
         </button>
 
         <!-- Previous Button -->
         <button id="zoom-prev"
             class="absolute left-4 top-1/2 -translate-y-1/2 z-50 p-4 text-white/50 hover:text-white transition-colors"
-            onclick="changeZoomSlide(-1)">
-            <i class="fas fa-chevron-left text-4xl"></i>
+            aria-label="Previous image" onclick="changeZoomSlide(-1)">
+            <i class="fas fa-chevron-left text-4xl" aria-hidden="true"></i>
         </button>
 
         <!-- Image Container -->
         <div class="w-full h-full flex items-center justify-center p-4 md:p-12">
-            <img id="zoom-img" src=""
+            <img id="zoom-img" src="" alt="Project screenshot – full screen view"
                 class="max-w-full max-h-full object-contain shadow-2xl transition-transform duration-300">
         </div>
 
         <!-- Next Button -->
         <button id="zoom-next"
             class="absolute right-4 top-1/2 -translate-y-1/2 z-50 p-4 text-white/50 hover:text-white transition-colors"
-            onclick="changeZoomSlide(1)">
-            <i class="fas fa-chevron-right text-4xl"></i>
+            aria-label="Next image" onclick="changeZoomSlide(1)">
+            <i class="fas fa-chevron-right text-4xl" aria-hidden="true"></i>
         </button>
     </div>
 
-    <!-- Scripts Loaded sequentially for File Protocol Compatibility -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="assets/js/data/translations.js"></script>
-    <script src="assets/js/data/projects.js"></script>
-    <script src="assets/js/data/skills.js"></script>
-    <script src="assets/js/modules/theme.js"></script>
-    <script src="assets/js/modules/language.js"></script>
-    <script src="assets/js/modules/modal.js"></script>
-    <script src="assets/js/modules/ui.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Scripts: defer preserves execution order while not blocking render -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="assets/js/data/translations.js" defer></script>
+    <script src="assets/js/data/projects.js" defer></script>
+    <script src="assets/js/data/skills.js" defer></script>
+    <script src="assets/js/modules/theme.js" defer></script>
+    <script src="assets/js/modules/language.js" defer></script>
+    <script src="assets/js/modules/modal.js" defer></script>
+    <script src="assets/js/modules/ui.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
