@@ -26,6 +26,16 @@ async function build() {
         fs.copySync(path.join(rootDir, htmlFile), path.join(distDir, htmlFile));
     }
 
+    // Copy SEO files
+    const seoFiles = ['sitemap.xml', 'robots.txt'];
+    for (const file of seoFiles) {
+        const src = path.join(rootDir, file);
+        if (fs.existsSync(src)) {
+            fs.copySync(src, path.join(distDir, file));
+            console.log(`   ✅ Copied ${file}`);
+        }
+    }
+
     // Copy CV if it exists in root (check if it's referenced in index.html)
     // In index.html line 147: href="assets/cv.Nguyen_Thanh_Vinh_Mobile_Developer_CV.pdf" - so it's already in assets.
 
