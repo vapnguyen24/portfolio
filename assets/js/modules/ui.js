@@ -1,16 +1,3 @@
-// Helper to observe reveal elements
-const observeRevealElements = () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-};
-
 // Render Projects Function - Global
 window.renderProjects = function (lang) {
     const list = document.getElementById('projects-list');
@@ -18,11 +5,9 @@ window.renderProjects = function (lang) {
 
     const btnText = window.translations && window.translations[lang] ? window.translations[lang].btn_details : 'View Details';
 
-    list.innerHTML = window.projects.map((project, index) => {
-        const delay = index * 100;
+    list.innerHTML = window.projects.map(project => {
         return `
-        <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 dark:bg-dark-card hover:-translate-y-2 transition-transform duration-300 border border-gray-100 dark:border-gray-800 reveal cursor-pointer"
-            style="transition-delay: ${delay}ms"
+        <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 dark:bg-dark-card hover:-translate-y-2 transition-transform duration-300 border border-gray-100 dark:border-gray-800 cursor-pointer"
             onclick="openModal('${project.id}')">
             <div class="relative overflow-hidden h-48">
                 <img src="${project.img}"
@@ -55,9 +40,7 @@ window.renderProjects = function (lang) {
         `;
     }).join('');
 
-    // Re-observe new elements
-    // Re-observe new elements
-    observeRevealElements();
+    if (window.animateProjects) window.animateProjects();
 };
 
 // Render Skills Function - Global
@@ -65,19 +48,16 @@ window.renderSkills = function () {
     const list = document.getElementById('skills-list');
     if (!list || !window.skills) return;
 
-    list.innerHTML = window.skills.map((skill, index) => {
-        const delay = (index % 6) * 50; // Stagger effect
+    list.innerHTML = window.skills.map(skill => {
         return `
-        <div class="group glass p-6 rounded-xl flex flex-col items-center justify-center hover:border-primary-500 transition-colors cursor-default reveal"
-             style="transition-delay: ${delay}ms">
+        <div class="group glass p-6 rounded-xl flex flex-col items-center justify-center hover:border-primary-500 transition-colors cursor-default">
             <i class="${skill.icon} text-4xl ${skill.color} mb-3 group-hover:scale-110 transition-transform ${skill.animate || ''}"></i>
             <span class="font-medium">${skill.name}</span>
         </div>
         `;
     }).join('');
 
-    // Re-observe new elements
-    observeRevealElements();
+    if (window.animateSkills) window.animateSkills();
 };
 
 window.initUI = function (state) {
@@ -85,15 +65,12 @@ window.initUI = function (state) {
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
     if (btn && menu) {
-        // Use a flag or check if listener attached? 
-        // Simplest: clone node to remove listeners or just ensure safe adding.
-        // But standard addEventListener is fine since initUI runs once.
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
     }
 
-    // Navbar Blur Effect on Scroll
+    // Navbar shadow on scroll
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('navbar');
         if (nav) {
@@ -109,19 +86,14 @@ window.initUI = function (state) {
     if (state && state.lang) {
         window.renderProjects(state.lang);
     } else {
-        // Fallback or just render with default 'en' if state not passed
         window.renderProjects('en');
     }
 
-    // Render Skills (not lang dependent)
     window.renderSkills();
-
-    // Initial Observation for static elements
-    observeRevealElements();
 
     // Set Copyright Year
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.innerText = new Date().getFullYear();
     }
-}
+};
