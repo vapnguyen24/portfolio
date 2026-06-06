@@ -1,5 +1,5 @@
 # robots.txt – Vinh Nguyen Portfolio
-# https://vapnguyen24.github.io/portfolio/
+# https://vapsoft.io.vn/
 #
 # NOTE: GitHub Pages serves robots.txt from the root domain
 # (https://vapnguyen24.github.io/robots.txt), not the /portfolio/ subpath.
@@ -40,4 +40,4 @@ User-agent: Applebot
 Allow: /
 
 # ─── Sitemap ─────────────────────────────────────────────────────────────────
-Sitemap: https://vapnguyen24.github.io/portfolio/sitemap.xml
+Sitemap: https://vapsoft.io.vn/sitemap.xml
